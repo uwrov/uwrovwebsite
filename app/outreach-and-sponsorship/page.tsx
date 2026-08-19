@@ -69,7 +69,7 @@ export default function SponsorsPage() {
             Interested in Sponsoring UWROV?
           </h2>
           <p className="text-purple-200 text-lg mb-8">
-            Reach out to discuss sponsorship packages, or support us directly through
+            Reach out to discuss sponsorship opportunities, or support us directly through
             Together UW.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
