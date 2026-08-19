@@ -122,15 +122,15 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+      <section className="pt-8 pb-16 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="sr-only">Achievements</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center text-center">
             {achievements.map((a) => (
-              <div key={a.stat + a.label} className="p-6 text-center">
-                <div className="text-3xl font-black text-[#4b2e83] mb-1">{a.stat}</div>
-                <div className="text-white font-semibold text-sm mb-1">{a.label}</div>
-                <div className="text-gray-400 text-xs">{a.sub}</div>
+              <div key={a.stat + a.label} className="p-6">
+                <div className="text-5xl font-black text-[#4b2e83] mb-2">{a.stat}</div>
+                <div className="text-white font-semibold text-base mb-1">{a.label}</div>
+                <div className="text-gray-400 text-sm">{a.sub}</div>
               </div>
             ))}
           </div>

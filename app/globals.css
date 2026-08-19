@@ -14,7 +14,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-roboto-slab), Georgia, serif;
+  font-family: var(--font-titillium-web), Georgia, serif;
   background-color: #000000;
   color: #ffffff;
 }

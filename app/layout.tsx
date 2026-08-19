@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto_Slab } from "next/font/google";
+import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const robotoSlab = Roboto_Slab({
+const titilliumWeb = Titillium_Web({
   subsets: ["latin"],
-  variable: "--font-roboto-slab",
+  weight: ["200", "300", "400", "600", "700", "900"],
+  variable: "--font-titillium-web",
   display: "swap",
 });
 
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={robotoSlab.variable}>
+    <html lang="en" className={titilliumWeb.variable}>
       <body className="bg-black text-gray-900 antialiased">
         <Navbar />
         <main>{children}</main>
