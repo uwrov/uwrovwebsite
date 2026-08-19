@@ -93,6 +93,32 @@ const leads: Member[] = [
   },
 ];
 
+// --- MEMBERS ------------------------------------------------------------
+const members: string[] = [
+  "Melody Drewfs",
+  "Chase Carson",
+  "Lucy Carlisle",
+  "Rachel Ha",
+  "Ayla Crowell",
+  "Lawrence Tang",
+  "Ian Choy",
+  "Carissa Willems",
+  "Aarav Shah",
+  "Logan Blondin",
+  "Luke Wells",
+  "Zoia Zinoveva",
+  "Anuj Jung Thapa",
+  "Rohan Rairkar",
+  "Victor Wong",
+  "Henry Quan Lam",
+  "Dorah Wang",
+  "Wanhao Zheng",
+  "Kelly Kwok",
+  "Gabrielle Rosario",
+  "Srithan Reddy Nalla",
+  "Sannie Wan",
+];
+
 function initials(name: string) {
   return name
     .split(" ")
@@ -185,15 +211,32 @@ export default function MeetTheTeamPage() {
       {/* Leads */}
       <section className="pb-24 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto pt-20">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Subteam Leads</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Leads</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Leads guide employees working on projects in their domain and oversee safety.
+            Leads guide members working on projects in their domain and oversee safety.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {leads.map((member, i) => (
               <div key={i} className="w-full sm:w-[calc(50%_-_1rem)] lg:w-[calc(25%_-_1.5rem)]">
                 <MemberCard member={member} />
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Members */}
+      <section className="pb-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto pt-20">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Members</h2>
+          <p className="text-gray-400 mb-10 max-w-2xl">
+            The students who design, build, and operate our ROVs and Floats every season.
+          </p>
+          <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
+            {members.map((name, i) => (
+              <p key={i} className="text-white text-base border-b border-white/10 pb-3">
+                {name}
+              </p>
             ))}
           </div>
         </div>
