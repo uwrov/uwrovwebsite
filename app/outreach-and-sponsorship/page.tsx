@@ -8,12 +8,11 @@ export const metadata: Metadata = {
 };
 
 const currentSponsors = [
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-1.png" },
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-2.png" },
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-3.png" },
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-4.png" },
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-5.png" },
-  { name: "Sponsor Name", logo: "/sponsors/placeholder-6.png" },
+  { name: "MATE ROV", logo: "/mate-rov-logo.png" },
+  { name: "APL UW", logo: "/apl-logo.png" },
+  { name: "School of Oceanography", logo: "/oceanography-logo.png" },
+  { name: "Spokbee", logo: "/spokbee-logo.png" },
+  { name: "Student Technology Fund", logo: "/stf-logo.png" }
 ];
 
 export default function SponsorsPage() {
@@ -43,17 +42,17 @@ export default function SponsorsPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
             Our Current Sponsors
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {currentSponsors.map((sponsor, i) => (
               <div
                 key={sponsor.name + i}
-                className="flex items-center justify-center h-24 bg-white/5 border border-gray-800 p-4"
+                className="flex items-center justify-center h-24 w-48 bg-white border border-gray-800 p-4"
               >
                 <Image
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  width={140}
-                  height={70}
+                  width={i === 1 ? 200 : 140}
+                  height={i === 1 ? 100 : 70}
                   className="max-h-full w-auto object-contain"
                 />
               </div>
@@ -69,7 +68,7 @@ export default function SponsorsPage() {
             Interested in Sponsoring UWROV?
           </h2>
           <p className="text-purple-200 text-lg mb-8">
-            Reach out to discuss sponsorship opportunities, or support us directly through
+            Reach out to discuss sponsorship packages, or support us directly through
             Together UW.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
