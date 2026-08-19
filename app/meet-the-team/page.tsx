@@ -67,7 +67,7 @@ const leads: Member[] = [
     name: "Arnav Jain",
     role: "Software Lead",
     grade: "2",
-    major: "PLACEHOLDER",
+    major: "Mathematics",
     bio: "BIO",
   },
   {
