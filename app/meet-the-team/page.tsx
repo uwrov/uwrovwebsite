@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Meet the Team",
@@ -20,25 +21,25 @@ type Member = {
 // once headshots are ready (drop the file into /public/team/).
 const chiefs: Member[] = [
   {
-    name: "Ellen Leier",
+    name: "Full Name",
     role: "Chief Executive Officer",
     grade: "Senior",
-    major: "Industrial Engineering",
-    bio: "BIO",
+    major: "Major",
+    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
   },
   {
-    name: "Marcus Kwek",
+    name: "Full Name",
     role: "Chief Technical Officer",
     grade: "Senior",
-    major: "Mechanical Engineering",
-    bio: "BIO",
+    major: "Major",
+    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
   },
   {
-    name: "Krishna Maanasa Ramadugu",
+    name: "Full Name",
     role: "Chief Administrative Officer",
-    grade: "Sophomore",
-    major: "Computer Science",
-    bio: "BIO",
+    grade: "Senior",
+    major: "Major",
+    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
   },
 ];
 
@@ -46,53 +47,53 @@ const chiefs: Member[] = [
 // 2 mechanical, 2 software, 1 electrical, 1 float, 1 community.
 const leads: Member[] = [
   {
-    name: "Suzu Yoshikawa",
+    name: "Full Name",
     role: "Mechanical Lead",
-    grade: "Senior",
-    major: "Microbiology and Education",
-    bio: "BIO",
+    grade: "Junior",
+    major: "Major",
+    bio: "One or two sentences about this person's role on the mechanical subteam.",
   },
   {
-    name: "Emmett Van Mason",
+    name: "Full Name",
     role: "Mechanical Lead",
-    grade: "Sophomore",
-    major: "Mechanical Engineering",
-    bio: "BIO",
+    grade: "Junior",
+    major: "Major",
+    bio: "One or two sentences about this person's role on the mechanical subteam.",
   },
   {
-    name: "Quinn Pfeifer",
+    name: "Full Name",
     role: "Software Lead",
-    grade: "Senior",
-    major: "Computer Science",
-    bio: "BIO",
+    grade: "Junior",
+    major: "Major",
+    bio: "One or two sentences about this person's role on the software subteam.",
   },
   {
-    name: "Arnav Jain",
+    name: "Full Name",
     role: "Software Lead",
-    grade: "Sophomore",
-    major: "PLACEHOLDER",
-    bio: "BIO",
+    grade: "Junior",
+    major: "Major",
+    bio: "One or two sentences about this person's role on the software subteam.",
   },
   {
-    name: "Aadithya Menon",
+    name: "Full Name",
     role: "Electrical Lead",
     grade: "Junior",
-    major: "Electrical and Computer Engineering",
-    bio: "BIO",
+    major: "Major",
+    bio: "One or two sentences about this person's role on the electrical subteam.",
   },
   {
-    name: "Abirami Subramanian",
+    name: "Full Name",
     role: "Float Lead",
     grade: "Junior",
-    major: "Informatics",
-    bio: "BIO",
+    major: "Major",
+    bio: "One or two sentences about this person's role leading the floats project.",
   },
   {
-    name: "Jerry Chan",
+    name: "Full Name",
     role: "Community Lead",
     grade: "Junior",
-    major: "Material Science and Engineering",
-    bio: "BIO",
+    major: "Major",
+    bio: "One or two sentences about this person's role on outreach and community.",
   },
 ];
 
@@ -143,17 +144,28 @@ export default function MeetTheTeamPage() {
     <div className="bg-black text-white">
       {/* Header */}
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
-            Our People
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
+              Our People
+            </div>
+            <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+              Meet the Team
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
+              UWROV is run entirely by students. Our chiefs and subteam leads coordinate the
+              engineering, operations, and community that make our ROVs possible.
+            </p>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
-            Meet the Team
-          </h1>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-            UWROV is run entirely by students. Our chiefs and subteam leads coordinate the
-            engineering, operations, and community that make our ROVs possible.
-          </p>
+          <div className="overflow-hidden">
+            <Image
+              src="/team.JPG"
+              alt="UWROV team photo"
+              width={600}
+              height={400}
+              className="w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -166,7 +178,7 @@ export default function MeetTheTeamPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {chiefs.map((member, i) => (
-              <div key={i} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]">
+              <div key={i} className="w-full sm:w-[calc(50%_-_1rem)] lg:w-[calc(25%_-_1.5rem)]">
                 <MemberCard member={member} />
               </div>
             ))}
@@ -183,7 +195,7 @@ export default function MeetTheTeamPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {leads.map((member, i) => (
-              <div key={i} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]">
+              <div key={i} className="w-full sm:w-[calc(50%_-_1rem)] lg:w-[calc(25%_-_1.5rem)]">
                 <MemberCard member={member} />
               </div>
             ))}
