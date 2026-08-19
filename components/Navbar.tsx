@@ -19,9 +19,9 @@ const subteamLinks = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false); // mobile menu
-  const [subteamsOpen, setSubteamsOpen] = useState(false); // desktop dropdown
-  const [mobileSubteamsOpen, setMobileSubteamsOpen] = useState(false); // mobile accordion
+  const [open, setOpen] = useState(false);
+  const [subteamsOpen, setSubteamsOpen] = useState(false);
+  const [mobileSubteamsOpen, setMobileSubteamsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6">
             <Link
               href={navLinks[0].href}
-              className="text-sm text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
+              className="text-base text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
             >
               {navLinks[0].label}
             </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setSubteamsOpen((o) => !o)}
-                className="flex items-center gap-1 text-sm text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
+                className="flex items-center gap-1 text-base text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
               >
                 Subteams
                 <svg
@@ -83,7 +83,7 @@ export default function Navbar() {
                       key={l.href}
                       href={l.href}
                       onClick={() => setSubteamsOpen(false)}
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-[#4b2e83] hover:bg-gray-50 font-medium transition-colors duration-200"
+                      className="block px-4 py-2 text-base text-gray-600 hover:text-[#4b2e83] hover:bg-gray-50 font-medium transition-colors duration-200"
                     >
                       {l.label}
                     </Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
+                className="text-base text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
               >
                 {l.label}
               </Link>
@@ -129,7 +129,7 @@ export default function Navbar() {
           <Link
             href={navLinks[0].href}
             onClick={() => setOpen(false)}
-            className="text-gray-700 hover:text-[#4b2e83] py-2 text-sm font-medium transition-colors"
+            className="text-gray-700 hover:text-[#4b2e83] py-2 text-base font-medium transition-colors"
           >
             {navLinks[0].label}
           </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
           <div>
             <button
               onClick={() => setMobileSubteamsOpen((o) => !o)}
-              className="w-full flex items-center justify-between text-gray-700 hover:text-[#4b2e83] py-2 text-sm font-medium transition-colors"
+              className="w-full flex items-center justify-between text-gray-700 hover:text-[#4b2e83] py-2 text-base font-medium transition-colors"
             >
               Subteams
               <svg
@@ -162,7 +162,7 @@ export default function Navbar() {
                       setOpen(false);
                       setMobileSubteamsOpen(false);
                     }}
-                    className="text-gray-600 hover:text-[#4b2e83] py-1.5 text-sm font-medium transition-colors"
+                    className="text-gray-600 hover:text-[#4b2e83] py-1.5 text-base font-medium transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -176,12 +176,11 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-gray-700 hover:text-[#4b2e83] py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-[#4b2e83] py-2 text-base font-medium transition-colors"
             >
               {l.label}
             </Link>
           ))}
-
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSe82YhpZVW22KgC2KjTKcbZlaZlW_83nLEyGWaAmY9JyK_N-g/viewform"
             target="_blank"
