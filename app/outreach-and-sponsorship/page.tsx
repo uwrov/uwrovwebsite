@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sponsors",
@@ -72,12 +73,12 @@ export default function SponsorsPage() {
             Together UW.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:uwrov@uw.edu"
+            <Link
+              href="/contact#contact-info"
               className="bg-black text-white font-bold px-8 py-3 hover:bg-gray-900 transition-colors"
             >
               Contact Us About Sponsoring
-            </a>
+            </Link>
             <a
               href="https://together.uw.edu/campaign/uwrov2"
               target="_blank"

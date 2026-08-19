@@ -67,7 +67,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-16">
+        <div id="contact-info" className="mt-16 scroll-mt-24">
           <h2 className="text-3xl font-black text-white mb-6 border-l-4 border-[#4b2e83] pl-4">Contact Info and Social Media</h2>
           <div className="space-y-4">
             {[
