@@ -13,87 +13,83 @@ type Member = {
   grade: string;
   major: string;
   bio: string;
-  image?: string; // path in /public, e.g. "/team/jane-doe.jpg" — omit to use placeholder initials
+  image?: string;
 };
 
 // --- CHIEFS -----------------------------------------------------------
-// Edit name / grade / major / bio for each. Add `image: "/team/xxx.jpg"`
-// once headshots are ready (drop the file into /public/team/).
 const chiefs: Member[] = [
   {
-    name: "Full Name",
+    name: "Ellen Leier",
     role: "Chief Executive Officer",
     grade: "Senior",
-    major: "Major",
-    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
+    major: "Industrial Engineering",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Marcus Kwek",
     role: "Chief Technical Officer",
     grade: "Senior",
-    major: "Major",
-    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
+    major: "Mechanical Engineering",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Krishna Maanasa Ramadugu",
     role: "Chief Administrative Officer",
-    grade: "Senior",
-    major: "Major",
-    bio: "One or two sentences about this person — background, what they lead, what they're excited about.",
+    grade: "Sophomore",
+    major: "Computer Science",
+    bio: "BIO",
   },
 ];
 
-// --- LEADS --------------------------------------------------------------
-// 2 mechanical, 2 software, 1 electrical, 1 float, 1 community.
 const leads: Member[] = [
   {
-    name: "Full Name",
+    name: "Suzu Yoshikawa",
     role: "Mechanical Lead",
-    grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on the mechanical subteam.",
+    grade: "Senior",
+    major: "Microbiology and Education",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Emmett Van Mason",
     role: "Mechanical Lead",
-    grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on the mechanical subteam.",
+    grade: "Sophomore",
+    major: "Mechanical Engineering",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Quinn Pfeifer",
     role: "Software Lead",
-    grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on the software subteam.",
+    grade: "Senior",
+    major: "Computer Science",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Arnav Jain",
     role: "Software Lead",
-    grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on the software subteam.",
+    grade: "Sophomore",
+    major: "PLACEHOLDER",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Aadithya Menon",
     role: "Electrical Lead",
     grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on the electrical subteam.",
+    major: "Electrical and Computer Engineering",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Abirami Subramanian",
     role: "Float Lead",
     grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role leading the floats project.",
+    major: "Informatics",
+    bio: "BIO",
   },
   {
-    name: "Full Name",
+    name: "Jerry Chan",
     role: "Community Lead",
     grade: "Junior",
-    major: "Major",
-    bio: "One or two sentences about this person's role on outreach and community.",
+    major: "Material Science and Engineering",
+    bio: "BIO",
   },
 ];
 
@@ -154,7 +150,7 @@ export default function MeetTheTeamPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
               UWROV is run entirely by students. Our chiefs and subteam leads coordinate the
-              engineering, operations, and community that make our ROVs possible.
+              engineering, operations, and community that make our work possible.
             </p>
           </div>
           <div className="overflow-hidden">
@@ -174,7 +170,7 @@ export default function MeetTheTeamPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Chiefs</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Our three chiefs — CEO, CTO, and CAO — share leadership of the team.
+            Our three chiefs — CEO, CTO, and CAO.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {chiefs.map((member, i) => (
@@ -191,7 +187,7 @@ export default function MeetTheTeamPage() {
         <div className="max-w-7xl mx-auto pt-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Subteam Leads</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Leads run day-to-day work on mechanical, software, electrical, floats, and community.
+            Leads guide employees working on projects in their domain and oversee safety.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {leads.map((member, i) => (
