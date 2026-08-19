@@ -103,7 +103,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe82YhpZVW22KgC2KjTKcbZlaZlW_83nLEyGWaAmY9JyK_N-g/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe7Hrpp_nH02SkSalhhOX88CfFylBclX1ZYPnaRywgFxi2-PA/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm"
