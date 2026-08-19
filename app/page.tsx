@@ -67,7 +67,7 @@ export default function HomePage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
               The Underwater Remotely Operated Vehicles Team (UWROV) at the University of Washington
-              is an interdisciplinary club where students make underwater robots. Our unique mix of
+              is an interdisciplinary RSO where students make underwater robots. Our unique mix of
               passion in both oceanography and engineering results in amazing ROVs and a fun team culture.
             </p>
             <p className="text-white font-semibold mb-4">Would you like to join us?</p>
@@ -150,18 +150,9 @@ export default function HomePage() {
                 as well as supporting regional events through volunteering and mentorship.
               </p>
               <p>
-                In 2024, we placed 8th overall at the 2024 MATE World Championships, performing very
-                well with our marketing display and technical documentation, earning 4th and 5th place respectively.
-              </p>
-              <p>
-                Most recently, we continued our streak of placing in the top 10 teams at the 2025 MATE
-                World Championships and received the Innovation Award. We earned 1st place in the
-                Engineering Presentation and Technical Documentation, which was later published in the{" "}
-                <a href="https://www.thejot.net/article-preview/?show_article_preview=1666"
-                  target="_blank" rel="noopener noreferrer"
-                  className="text-[#a78bca] hover:text-white transition-colors">
-                  Journal of Ocean Technology
-                </a>. We also placed 1st in the Machine Learning Challenge.
+                We continued our streak of top 10 finishes, placing 9th overall at the 2026 MATE World
+                Championships. performing very well with our engineering presentation and technical documentation, 
+                earning 2nd and 3rd place, respectively.
               </p>
               <p>
                 We strive to continue giving UW students hands-on experience in ocean technology,

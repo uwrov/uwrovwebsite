@@ -15,7 +15,7 @@ export default function Footer() {
               className="h-12 w-auto object-contain mb-4 brightness-0 invert"
             />
             <p className="text-purple-200 text-sm leading-relaxed">
-              University of Washington&apos;s interdisciplinary underwater robotics club,
+              University of Washington&apos;s interdisciplinary underwater robotics RSO,
               competing at the MATE ROV World Championship since 2011.
             </p>
           </div>
