@@ -27,7 +27,7 @@ export default function BusinessPage() {
           <div>
             <div className="overflow-hidden">
               <Image
-                src="/business/2026-marketing-display.PNG"
+                src="/business/2026-marketing-display.png"
                 alt="UWROV 2026 marketing display"
                 width={600}
                 height={450}
@@ -86,7 +86,7 @@ export default function BusinessPage() {
             <div>
               <div className="overflow-hidden mb-5">
                 <Image
-                  src="/business/biz-tides-poster.PNG"
+                  src="/business/biz-tides-poster.png"
                   alt="UWROV Business subteam TIDES 2026 poster"
                   width={600}
                   height={450}
@@ -132,7 +132,7 @@ export default function BusinessPage() {
             <div>
               <div className="overflow-hidden mb-5">
                 <Image
-                  src="/business/regionals-volunteering.PNG"
+                  src="/business/regionals-volunteering.png"
                   alt="UWROV members volunteering at the MATE PNW Regionals competition"
                   width={600}
                   height={450}
