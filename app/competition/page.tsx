@@ -57,7 +57,7 @@ export default function CompetitionPage() {
           <div className="overflow-hidden">
             <Image
               src="/gallery/main-pic.jpg"
-              alt="Suzu, Arnav, and Imants setting up surface station at MATE ROV 2026 World Championships"
+              alt="Suzu, Arnav, and Imants, members of UWROV, setting up the surface station at MATE ROV 2026 World Championships."
               width={1024}
               height={512}
               className="w-full object-cover"
@@ -66,8 +66,7 @@ export default function CompetitionPage() {
           </div>
         </div>
       </section>
-
-      {/* Our Process / Season Timeline */}
+      
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Process</h2>
@@ -78,7 +77,7 @@ export default function CompetitionPage() {
           <div className="overflow-hidden border border-white/10 bg-black p-4 sm:p-6 mb-10">
             <Image
               src="/timeline.png"
-              alt="UWROV season timeline: Onboarding, Ideation, Prototyping, Integration, and Deployments phases from October through May"
+              alt="UWROV season timeline: Onboarding, Ideation, Prototyping, Integration, and Deployments phases from October through May."
               width={980}
               height={300}
               className="w-full max-w-3xl mx-auto object-contain"

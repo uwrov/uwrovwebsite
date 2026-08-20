@@ -69,12 +69,12 @@ export default function MechanicalPage() {
             <div className="flex flex-col gap-6">
               <CadViewer
                 src="/models/conduit-optimized.glb"
-                alt="UWROV ROV CAD model"
+                alt="UWROV ROV Conduit 3D CAD model."
                 orientation="90deg 270deg 270deg"
               />
               <CadViewer
                 src="/models/nanofloat-2-0.glb"
-                alt="NanoFloat 2.0 Assembly CAD model"
+                alt="NanoFloat 2.0 3D CAD model."
                 orientation="90deg 270deg 90deg"
               />
             </div>

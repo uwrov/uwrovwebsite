@@ -28,7 +28,7 @@ export default function BusinessPage() {
             <div className="overflow-hidden">
               <Image
                 src="/business/2026-marketing-display.png"
-                alt="UWROV 2026 marketing display"
+                alt="UWROV 2026 marketing display."
                 width={600}
                 height={450}
                 className="w-full object-cover"
@@ -58,7 +58,7 @@ export default function BusinessPage() {
               <h3 className="text-white font-bold text-lg mb-2">Marketing Display</h3>
               <p className="text-gray-400 leading-relaxed">
                 We design and produce the marketing display presented at competition,
-                showcasing our ROV and team to judges and other teams.
+                showcasing our ROV, Float, and team to judges and other teams.
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
@@ -87,7 +87,7 @@ export default function BusinessPage() {
               <div className="overflow-hidden mb-5">
                 <Image
                   src="/business/biz-tides-poster.png"
-                  alt="UWROV Business subteam TIDES 2026 poster"
+                  alt="UWROV Business area of interest TIDES 2026 poster."
                   width={600}
                   height={450}
                   className="w-full object-cover"
@@ -133,7 +133,7 @@ export default function BusinessPage() {
               <div className="overflow-hidden mb-5">
                 <Image
                   src="/business/regionals-volunteering.png"
-                  alt="UWROV members volunteering at the MATE PNW Regionals competition"
+                  alt="UWROV members volunteering at the MATE PNW Regionals competition, group picture."
                   width={600}
                   height={450}
                   className="w-full object-cover"

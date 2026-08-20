@@ -154,12 +154,10 @@ function LinkedInIcon() {
 function MemberCard({ member }: { member: Member }) {
   return (
     <div className="group">
-      {/* Flip container */}
       <div className="[perspective:1000px] w-full aspect-square">
         <div
           className="relative w-full h-full transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
         >
-          {/* Front face */}
           <div className="absolute inset-0 [backface-visibility:hidden] bg-[#0a0a0a] border border-white/10 overflow-hidden">
             {member.image ? (
               <img
@@ -176,7 +174,6 @@ function MemberCard({ member }: { member: Member }) {
             )}
           </div>
 
-          {/* Back face */}
           <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#0a0a0a] border border-[#4b2e83] overflow-y-auto p-5 flex flex-col justify-center">
             <p className="text-gray-300 text-sm leading-relaxed">{member.bio}</p>
           </div>
@@ -229,7 +226,7 @@ export default function MeetTheTeamPage() {
           <div className="overflow-hidden">
             <Image
               src="/team.JPG"
-              alt="UWROV team photo"
+              alt="UWROV 2025-26 team photo."
               width={600}
               height={400}
               className="w-full object-cover"

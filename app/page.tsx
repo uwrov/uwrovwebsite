@@ -53,8 +53,6 @@ const openSource = [
 export default function HomePage() {
   return (
     <div className="bg-black text-white">
-
-      {/* Hero */}
       <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -120,7 +118,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats */}
       <section className="pt-8 pb-16 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="sr-only">Achievements</h2>
@@ -136,7 +133,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Who We Are */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-8">Who We Are</h2>
@@ -171,7 +167,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Work */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Our Work</h2>
@@ -200,7 +195,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-[#4b2e83] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
