@@ -16,7 +16,7 @@ export default function Footer() {
             />
             <p className="text-purple-200 text-sm leading-relaxed">
               University of Washington&apos;s interdisciplinary underwater robotics RSO,
-              competing at the MATE ROV World Championship since 2011.
+              competing at the MATE ROV World Championship since 2012.
             </p>
           </div>
           <div>

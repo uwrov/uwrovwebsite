@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const results = [
   { year: "2024", placement: "8th Overall", note: "4th – Marketing Display, 5th – Technical Documentation" },
-  { year: "2025", placement: "Top 10 + Innovation Award", note: "1st – Engineering Presentation & Technical Documentation, 1st – NOAA AI Challenge" },
+  { year: "2025", placement: "9th Overall + Innovation Award", note: "1st – Engineering Presentation & Technical Documentation, 1st – NOAA AI Challenge" },
   { year: "2026", placement: "9th Overall", note: "2nd - Engineering Presentation, 3rd - Technical Documentation" },
 ];
 
@@ -40,7 +40,7 @@ export default function CompetitionPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg mb-8">
               The MATE ROV Competition tasks students with building their own underwater
-              remotely operated vehicles and float systems, developing skills crucial to 
+              remotely operated vehicles and vertical profiling float systems, developing skills crucial to 
               solving real-world ocean problems. We compete in the Explorer Class, which is the collegiate class in the competition,
               where teams are expected to perform at a high level from vehicle engineering and demonstrations to technical and marketing
               documentation.
@@ -67,7 +67,47 @@ export default function CompetitionPage() {
         </div>
       </section>
 
+      {/* Our Process / Season Timeline */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Process</h2>
+          <p className="text-gray-400 mb-10 max-w-2xl">
+            Our season runs in structured phases aligned with the timing of the MATE RFP,
+            marked by milestone-driven events that set deadlines and performance expectations.
+          </p>
+          <div className="overflow-hidden border border-white/10 bg-black p-4 sm:p-6 mb-10">
+            <Image
+              src="/timeline.png"
+              alt="UWROV season timeline: Onboarding, Ideation, Prototyping, Integration, and Deployments phases from October through May"
+              width={980}
+              height={300}
+              className="w-full max-w-3xl mx-auto object-contain"
+            />
+          </div>
+          <div className="grid sm:grid-cols-3 gap-8 text-gray-400 leading-relaxed">
+            <p>
+              Our season starts with onboarding, built around Mini-MATE, which is an in-house,
+              8-week version of the MATE ROV Competition. New members train in small
+              groups with lead mentorship and demonstrate their skills at the Mini-MATE
+              Competition in late November, just before the year&apos;s MATE RFP is released.
+            </p>
+            <p>
+              Ideation begins once onboarding wraps up, kicking off the prototyping and
+              integration phases. These phases intentionally overlap to reflect our
+              iterative design process. A proof of concept is required by the UWROV
+              Winter Expo in early March, where we present our core concept and prototype
+              to stakeholders.
+            </p>
+            <p>
+              After further refinement, we move into deployments, testing tasks from the
+              MATE RFP in water. Field readiness is demonstrated at the UWROV Open House
+              in early May, where we run live pool deployments for the public.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Results</h2>
           <p className="text-gray-400 mb-12 max-w-2xl">
@@ -85,11 +125,11 @@ export default function CompetitionPage() {
         </div>
       </section>
 
-      <section className="py-20 pb-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 pb-28 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">2026 MATE ROV World Championship Gallery</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Moments from our most recent trip to the MATE World Championship in St. John's, Newfoundland and Labrador.
+            Moments from our most recent trip to the MATE World Championship held in St. John&apos;s, Newfoundland and Labrador, Canada.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryPhotos.map((photo, i) => (

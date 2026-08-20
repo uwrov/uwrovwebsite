@@ -72,11 +72,10 @@ export default function HomePage() {
             </p>
             <p className="text-white font-semibold text-2xl mb-4">Would you like to join us?</p>
             <div className="flex flex-wrap gap-3 mb-8">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe82YhpZVW22KgC2KjTKcbZlaZlW_83nLEyGWaAmY9JyK_N-g/viewform"
-                target="_blank" rel="noopener noreferrer"
+              <Link href="/contact"
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Application
-              </a>
+              </Link>
               <Link href="/contact"
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Contact Us
