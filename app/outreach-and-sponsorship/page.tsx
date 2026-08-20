@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sponsors",
@@ -19,6 +20,7 @@ export default function SponsorsPage() {
   return (
     <div className="bg-black text-white">
 
+      {/* Hero */}
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
@@ -35,6 +37,7 @@ export default function SponsorsPage() {
         </div>
       </section>
 
+      {/* Current Sponsors */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
@@ -62,22 +65,23 @@ export default function SponsorsPage() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="bg-[#4b2e83] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
             Interested in Sponsoring UWROV?
           </h2>
           <p className="text-purple-200 text-lg mb-8">
-            Reach out to discuss sponsorship packages, or support us directly through
+            Reach out to discuss sponsorship opportunities, or support us directly through
             Together UW.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:uwrov@uw.edu"
+            <Link
+              href="/contact#contact-info"
               className="bg-black text-white font-bold px-8 py-3 hover:bg-gray-900 transition-colors"
             >
               Contact Us About Sponsoring
-            </a>
+            </Link>
             <a
               href="https://together.uw.edu/campaign/uwrov2"
               target="_blank"
