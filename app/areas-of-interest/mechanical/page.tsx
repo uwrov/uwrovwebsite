@@ -84,7 +84,7 @@ export default function MechanicalPage() {
 
       <section className="py-20 pb-28 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Gallery</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Photo Gallery</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
             Moments from the Mechanical team's design and build process.
           </p>
