@@ -58,10 +58,10 @@ export default function HomePage() {
       <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
+            <div className="inline-block bg-[#4b2e83] text-white text-sm font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
               University of Washington
             </div>
-            <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+            <h1 className="text-4xl sm:text-4xl font-black text-white leading-tight mb-6">
               Learn, Design,{" "}
               <span className="text-[#4b2e83]">Build.</span>
             </h1>
@@ -70,35 +70,35 @@ export default function HomePage() {
               is an interdisciplinary RSO where students make underwater robots. Our unique mix of
               passion in both oceanography and engineering results in amazing ROVs and a fun team culture.
             </p>
-            <p className="text-white font-semibold mb-4">Would you like to join us?</p>
+            <p className="text-white font-semibold text-2xl mb-4">Would you like to join us?</p>
             <div className="flex flex-wrap gap-3 mb-8">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSe82YhpZVW22KgC2KjTKcbZlaZlW_83nLEyGWaAmY9JyK_N-g/viewform"
                 target="_blank" rel="noopener noreferrer"
-                className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold px-6 py-2.5 transition-colors">
+                className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Applications
               </a>
               <Link href="/contact"
-                className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold px-6 py-2.5 transition-colors">
+                className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Contact Us
               </Link>
             </div>
             <div className="mb-4">
-              <p className="text-white font-semibold mb-2">Support Us:</p>
+              <p className="text-white font-semibold text-2xl mb-2">Support Us:</p>
               <div className="flex gap-4 flex-wrap">
                 <a href="https://together.uw.edu/campaign/uwrov2" target="_blank" rel="noopener noreferrer"
-                  className="text-[#a78bca] hover:text-white text-sm transition-colors">Together UW</a>
+                  className="text-[#a78bca] hover:text-white text-lg transition-colors">Together UW</a>
                 <a href="/sponsors"
-                  className="text-[#a78bca] hover:text-white text-sm transition-colors">Sponsors</a>
+                  className="text-[#a78bca] hover:text-white text-lg transition-colors">Sponsors</a>
               </div>
             </div>
             <div>
-              <p className="text-white font-semibold mb-2">Open Source Content:</p>
+              <p className="text-white font-semibold text-2xl mb-2">Open Source Content:</p>
               <div className="flex flex-col gap-1">
                 {openSource.map((r) => (
                   <a key={r.href} href={r.href}
                     target={r.href.startsWith("http") ? "_blank" : undefined}
                     rel={r.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="text-[#a78bca] hover:text-white text-sm transition-colors">
+                    className="text-[#a78bca] hover:text-white text-lg transition-colors">
                     {r.label}
                   </a>
                 ))}
@@ -128,9 +128,9 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center text-center">
             {achievements.map((a) => (
               <div key={a.stat + a.label} className="p-6">
-                <div className="text-5xl font-black text-[#4b2e83] mb-2">{a.stat}</div>
-                <div className="text-white font-semibold text-base mb-1">{a.label}</div>
-                <div className="text-gray-400 text-sm">{a.sub}</div>
+                <div className="text-4xl font-black text-[#4b2e83] mb-2">{a.stat}</div>
+                <div className="text-white font-semibold text-lg mb-1">{a.label}</div>
+                <div className="text-gray-400 text-base">{a.sub}</div>
               </div>
             ))}
           </div>
@@ -140,9 +140,9 @@ export default function HomePage() {
       {/* Who We Are */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">Who We Are</h2>
+          <h2 className="text-4xl font-bold text-white mb-8">Who We Are</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-4 text-gray-300 leading-relaxed">
+            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
                 UWROV was founded over 10 years ago by UW Oceanography students interested in ocean
                 technology and has continued to expand its scope to other engineering and marine science
