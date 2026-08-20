@@ -61,7 +61,7 @@ export default function Footer() {
                 ["GitHub", "https://github.com/uwrov"],
                 ["Newsletter", "https://uwrov.substack.com"],
                 ["Donate / TogetherUW", "https://together.uw.edu/campaign/uwrov2"],
-                ["MATE Competition", "https://materovcompetition.org/"],
+                ["MATE ROV Competition", "https://materovcompetition.org/"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <a href={href} target="_blank" rel="noopener noreferrer"
