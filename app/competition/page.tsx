@@ -41,7 +41,7 @@ export default function CompetitionPage() {
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg mb-8">
               The MATE ROV Competition tasks students with building their own underwater
               remotely operated vehicles and float systems, developing skills crucial to 
-              solving real-world ocean problems. We compete in the Explorer Class, which is the most advanced class in the competition,
+              solving real-world ocean problems. We compete in the Explorer Class, which is the collegiate class in the competition,
               where teams are expected to perform at a high level from vehicle engineering and demonstrations to technical and marketing
               documentation.
             </p>
