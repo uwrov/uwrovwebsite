@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Business Subteam",
-  description: "UWROV's Business subteam organizes outreach, connects with sponsors, and produces technical documentation and marketing materials for competition.",
+  description: "UWROV's Business subteam organizes outreach, connects with sponsors, and produces documentation and marketing materials for competition.",
 };
 
 export default function BusinessPage() {
@@ -20,7 +20,7 @@ export default function BusinessPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
               The Business subteam organizes outreach, connects with sponsors, and composes
-              competition-critical materials including marketing displays and technical
+              competition-critical materials including marketing displays and
               documentation.
             </p>
           </div>
@@ -35,6 +35,9 @@ export default function BusinessPage() {
                 priority
               />
             </div>
+            <p className="text-gray-400 text-sm text-center mt-2">
+              2026 MATE ROV Marketing Display
+            </p>
           </div>
         </div>
       </section>
@@ -70,6 +73,79 @@ export default function BusinessPage() {
               <p className="text-gray-400 leading-relaxed">
                 We organize outreach events including workshops that introduce
                 K-12 students to underwater robotics and ocean technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-12">Highlighted Activities</h2>
+          <div className="grid md:grid-cols-3 gap-10">
+            <div>
+              <div className="overflow-hidden mb-5">
+                <Image
+                  src="/biz-tides-poster.PNG"
+                  alt="UWROV Business subteam TIDES 2026 poster"
+                  width={600}
+                  height={450}
+                  className="w-full object-cover"
+                />
+              </div>
+              <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-3">
+                Professional Development
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">TIDES 2026</h3>
+              <p className="text-gray-400 leading-relaxed mb-3">
+                At TIDES 2026, UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, Ellen
+                Leier, and Rowan Newell presented <em>&ldquo;Student ROV Teams: Bridging the
+                Gap Between Students and the Blue Economy.&rdquo;</em>
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+                The poster shared survey results from 22 members showing statistically
+                significant growth in both technical and professional skills gained through
+                UWROV, along with what members want from industry going forward.
+              </p>
+            </div>
+
+            <div>
+              <div className="overflow-hidden mb-5">
+                <Image
+                  src="/liasus-fuscus-tour.jpg"
+                  alt="UWROV giving a shop tour and presentation to Liasus Fuscus, the Tesla STEM ROV team"
+                  width={600}
+                  height={450}
+                  className="w-full object-cover"
+                />
+              </div>
+              <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-3">
+                Mentorship
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Liasus Fuscus Mentorship</h3>
+              <p className="text-gray-400 leading-relaxed">
+                UWROV hosted Liasus Fuscus, the Tesla STEM High School ROV team, for a shop
+                tour and presentation, sharing our design process and mentoring teams in the Ranger class.
+              </p>
+            </div>
+
+            <div>
+              <div className="overflow-hidden mb-5">
+                <Image
+                  src="/regionals-volunteering.PNG"
+                  alt="UWROV members volunteering at the MATE PNW Regionals competition"
+                  width={600}
+                  height={450}
+                  className="w-full object-cover"
+                />
+              </div>
+              <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-3">
+                Volunteering
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">MATE PNW Regionals</h3>
+              <p className="text-gray-400 leading-relaxed">
+                UWROV members volunteered at the MATE PNW Regionals competition, supporting
+                the next wave of student ROV teams as they competed to advance to Worlds.
               </p>
             </div>
           </div>

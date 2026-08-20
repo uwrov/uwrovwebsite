@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sponsors",
@@ -9,11 +8,11 @@ export const metadata: Metadata = {
 };
 
 const currentSponsors = [
-  { name: "MATE ROV", logo: "/mate-rov-logo.png" },
-  { name: "APL UW", logo: "/apl-logo.png" },
-  { name: "School of Oceanography", logo: "/oceanography-logo.png" },
-  { name: "Spokbee", logo: "/spokbee-logo.png" },
-  { name: "Student Technology Fund", logo: "/stf-logo.png" }
+  { name: "MATE ROV", logo: "/mate-rov-logo.png", url: "https://materovcompetition.org/" },
+  { name: "APL UW", logo: "/apl-logo.png", url: "https://www.apl.washington.edu/" },
+  { name: "School of Oceanography", logo: "/oceanography-logo.png", url: "https://www.ocean.washington.edu/" },
+  { name: "Spokbee", logo: "/spokbee-logo.png", url: "https://www.spokbee.com/" },
+  { name: "Student Technology Fund", logo: "/stf-logo.png", url: "https://techfee.uw.edu/" }
 ];
 
 export default function SponsorsPage() {
@@ -45,18 +44,21 @@ export default function SponsorsPage() {
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
             {currentSponsors.map((sponsor, i) => (
-              <div
+              <a
                 key={sponsor.name + i}
-                className="flex items-center justify-center h-24 w-48 bg-white border border-gray-800 p-4"
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative flex items-center justify-center h-24 w-48 bg-white border border-gray-800 p-4 hover:border-[#4b2e83] transition-colors"
               >
                 <Image
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  width={i === 1 ? 200 : 140}
-                  height={i === 1 ? 100 : 70}
-                  className="max-h-full w-auto object-contain"
+                  fill
+                  sizes="192px"
+                  className="object-contain p-4"
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -69,16 +71,16 @@ export default function SponsorsPage() {
             Interested in Sponsoring UWROV?
           </h2>
           <p className="text-purple-200 text-lg mb-8">
-            Reach out to discuss sponsorship opportunities, or support us directly through
+            Reach out to discuss sponsorship packages, or support us directly through
             Together UW.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact#contact-info"
+            <a
+              href="mailto:uwrov@uw.edu"
               className="bg-black text-white font-bold px-8 py-3 hover:bg-gray-900 transition-colors"
             >
               Contact Us About Sponsoring
-            </Link>
+            </a>
             <a
               href="https://together.uw.edu/campaign/uwrov2"
               target="_blank"
