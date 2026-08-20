@@ -49,9 +49,9 @@ export default function MechanicalPage() {
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Manipulator</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Manipulators</h3>
               <p className="text-gray-400 leading-relaxed">
-                We build the manipulator arm used to complete underwater tasks during
+                We build the manipulators used to complete underwater tasks during
                 competition missions.
               </p>
             </div>
