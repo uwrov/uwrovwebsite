@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-purple-600 mt-10 pt-6 text-center text-purple-300 text-xs">
-          © {new Date().getFullYear()} UWROV – University of Washington Remotely Operated Vehicles Team
+          © {new Date().getFullYear()} UWROV – Underwater Remotely Operated Vehicles at the University of Washington
         </div>
       </div>
     </footer>
