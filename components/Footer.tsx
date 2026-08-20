@@ -28,6 +28,7 @@ export default function Footer() {
                 ["ROVs", "/rovs"],
                 ["Floats", "/floats"],
                 ["Sponsorship", "/outreach-and-sponsorship"],
+                ["Contact Us", "/contact#contact-info"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-purple-200 hover:text-white transition-colors">

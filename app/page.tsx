@@ -74,7 +74,7 @@ export default function HomePage() {
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Application
               </Link>
-              <Link href="/contact"
+              <Link href="/contact#contact-info"
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
                 Contact Us
               </Link>
