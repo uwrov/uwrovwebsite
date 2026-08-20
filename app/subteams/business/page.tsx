@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Business Subteam",
@@ -9,18 +10,32 @@ export default function BusinessPage() {
   return (
     <div className="bg-black text-white min-h-screen">
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
-            Subteam
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
+              Subteam
+            </div>
+            <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+              Business
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+              The Business subteam organizes outreach, connects with sponsors, and composes
+              competition-critical materials including marketing displays and technical
+              documentation.
+            </p>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
-            Business
-          </h1>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-            The Business subteam organizes outreach, connects with sponsors, and composes
-            competition-critical materials including marketing displays and technical
-            documentation.
-          </p>
+          <div>
+            <div className="overflow-hidden">
+              <Image
+                src="/2026-marketing-display.PNG"
+                alt="UWROV 2026 marketing display"
+                width={600}
+                height={450}
+                className="w-full object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
