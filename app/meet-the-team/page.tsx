@@ -222,7 +222,7 @@ export default function MeetTheTeamPage() {
               Meet the Team
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
-              UWROV is run entirely by students. Our chiefs and subteam leads coordinate the
+              UWROV is run entirely by students. Our chiefs and leads coordinate the
               engineering, operations, and community that make our work possible.
             </p>
           </div>
