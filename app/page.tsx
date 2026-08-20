@@ -61,7 +61,7 @@ export default function HomePage() {
             <div className="inline-block bg-[#4b2e83] text-white text-sm font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
               University of Washington
             </div>
-            <h1 className="text-4xl sm:text-4xl font-black text-white leading-tight mb-6">
+            <h1 className="text-6xl sm:text-7xl lg:text-6xl font-black text-white leading-tight mb-6">
               Learn, Design,{" "}
               <span className="text-[#4b2e83]">Build.</span>
             </h1>
@@ -75,7 +75,7 @@ export default function HomePage() {
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSe82YhpZVW22KgC2KjTKcbZlaZlW_83nLEyGWaAmY9JyK_N-g/viewform"
                 target="_blank" rel="noopener noreferrer"
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
-                Applications
+                Application
               </a>
               <Link href="/contact"
                 className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold text-lg px-8 py-4 transition-colors">
@@ -86,9 +86,9 @@ export default function HomePage() {
               <p className="text-white font-semibold text-2xl mb-2">Support Us:</p>
               <div className="flex gap-4 flex-wrap">
                 <a href="https://together.uw.edu/campaign/uwrov2" target="_blank" rel="noopener noreferrer"
-                  className="text-[#a78bca] hover:text-white text-lg transition-colors">Together UW</a>
+                  className="text-[#a78bca] hover:text-white text-xl transition-colors">Together UW</a>
                 <a href="/sponsors"
-                  className="text-[#a78bca] hover:text-white text-lg transition-colors">Sponsors</a>
+                  className="text-[#a78bca] hover:text-white text-xl transition-colors">Sponsors</a>
               </div>
             </div>
             <div>
@@ -142,7 +142,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-8">Who We Are</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-300 text-xl leading-relaxed">
               <p>
                 UWROV was founded over 10 years ago by UW Oceanography students interested in ocean
                 technology and has continued to expand its scope to other engineering and marine science
