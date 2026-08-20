@@ -6,6 +6,10 @@ type CadViewerProps = {
   src: string;
   alt: string;
   posterSrc?: string;
+  // Fixes CAD exports that come in on the wrong axis (e.g. Z-up from Onshape
+  // vs. the Y-up convention model-viewer/glTF expects). Format: "Xdeg Ydeg Zdeg".
+  // Common fix for a model lying on its side: "90deg 0deg 0deg".
+  orientation?: string;
 };
 
 // Loads the <model-viewer> custom element script only once, the first time
@@ -29,7 +33,7 @@ function loadModelViewerScript(): Promise<void> {
   return modelViewerScriptPromise;
 }
 
-export default function CadViewer({ src, alt, posterSrc }: CadViewerProps) {
+export default function CadViewer({ src, alt, posterSrc, orientation = "0deg 0deg 0deg" }: CadViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
   const [scriptReady, setScriptReady] = useState(false);
@@ -88,6 +92,7 @@ export default function CadViewer({ src, alt, posterSrc }: CadViewerProps) {
           alt={alt}
           camera-controls
           auto-rotate
+          orientation={orientation}
           shadow-intensity="1"
           exposure="1"
           style={{ width: "100%", height: "100%", backgroundColor: "transparent" }}
