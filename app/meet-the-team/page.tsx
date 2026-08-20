@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
-    "Meet the students leading UWROV. Our chiefs and subteam leads work across mechanical, electrical, software, floats, and community.",
+    "Meet the students leading UWROV. Our chiefs and leads work across mechanical, electrical, software, floats, and community.",
 };
 
 type Member = {
@@ -154,21 +154,35 @@ function LinkedInIcon() {
 function MemberCard({ member }: { member: Member }) {
   return (
     <div className="group">
-      <div className="aspect-square w-full overflow-hidden bg-[#0a0a0a] border border-white/10">
-        {member.image ? (
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="text-4xl font-black text-[#4b2e83]">
-              {initials(member.name)}
-            </span>
+      {/* Flip container */}
+      <div className="[perspective:1000px] w-full aspect-square">
+        <div
+          className="relative w-full h-full transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+        >
+          {/* Front face */}
+          <div className="absolute inset-0 [backface-visibility:hidden] bg-[#0a0a0a] border border-white/10 overflow-hidden">
+            {member.image ? (
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="text-4xl font-black text-[#4b2e83]">
+                  {initials(member.name)}
+                </span>
+              </div>
+            )}
           </div>
-        )}
+
+          {/* Back face */}
+          <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#0a0a0a] border border-[#4b2e83] overflow-y-auto p-5 flex flex-col justify-center">
+            <p className="text-gray-300 text-sm leading-relaxed">{member.bio}</p>
+          </div>
+        </div>
       </div>
+
       <div className="pt-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-[#a78bca] mb-1">
           {member.role}
@@ -187,10 +201,9 @@ function MemberCard({ member }: { member: Member }) {
             </a>
           )}
         </div>
-        <p className="text-gray-400 text-sm mb-2">
+        <p className="text-gray-400 text-sm">
           {member.grade} &middot; {member.major}
         </p>
-        <p className="text-gray-300 text-sm leading-relaxed">{member.bio}</p>
       </div>
     </div>
   );
