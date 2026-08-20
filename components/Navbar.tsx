@@ -48,7 +48,6 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-6">
             <Link
               href={navLinks[0].href}
@@ -57,7 +56,6 @@ export default function Navbar() {
               {navLinks[0].label}
             </Link>
 
-            {/* Subteams dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setSubteamsOpen((o) => !o)}
@@ -112,7 +110,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile toggle */}
           <button onClick={() => setOpen(!open)} className="md:hidden text-gray-500 hover:text-gray-900 p-2" aria-label="Toggle menu">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {open
@@ -123,7 +120,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white border-t border-gray-200 px-4 py-4 flex flex-col gap-3">
           <Link
@@ -134,7 +130,6 @@ export default function Navbar() {
             {navLinks[0].label}
           </Link>
 
-          {/* Subteams accordion */}
           <div>
             <button
               onClick={() => setMobileSubteamsOpen((o) => !o)}

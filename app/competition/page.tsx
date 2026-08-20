@@ -3,29 +3,25 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Competition",
-  description: "UWROV competes in the Explorer Class of the MATE ROV World Championship — the most advanced student ROV competition in the world.",
+  description: "UWROV competes in the Explorer Class of the MATE ROV World Championship.",
 };
 
-// Real results, oldest to newest — order carries information here, so a timeline is warranted.
 const results = [
   { year: "2024", placement: "8th Overall", note: "4th – Marketing Display, 5th – Technical Documentation" },
-  { year: "2025", placement: "Top 10 + Innovation Award", note: "1st – Engineering Presentation & Technical Documentation, 1st – ML Challenge" },
-  { year: "2026", placement: "9th Overall", note: "St. John's, Newfoundland & Labrador — 36 teams in Explorer Class" },
+  { year: "2025", placement: "Top 10 + Innovation Award", note: "1st – Engineering Presentation & Technical Documentation, 1st – NOAA AI Challenge" },
+  { year: "2026", placement: "9th Overall", note: "2nd - Engineering Presentation, 3rd - Technical Documentation" },
 ];
 
-// Worlds photo gallery — drop files into /public/competition/ and reference them
-// here, e.g. { src: "/competition/worlds-2026-pit.jpg", caption: "Pit setup, Day 1" }.
-// Entries left without a src render as an empty slot ready to fill in.
 type GalleryPhoto = { src?: string; caption: string };
 const galleryPhotos: GalleryPhoto[] = [
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
-  { caption: "Add photo" },
+  { src: "/gallery/pic1.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic2.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic3.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic4.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic5.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic6.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic7.jpg", caption: "Surface station during run" },
+  { src: "/gallery/pic8.jpg", caption: "Surface station during run" },
 ];
 
 export default function CompetitionPage() {
@@ -55,13 +51,13 @@ export default function CompetitionPage() {
               rel="noopener noreferrer"
               className="bg-[#4b2e83] hover:bg-[#3a2266] text-white font-semibold px-6 py-2.5 transition-colors inline-block"
             >
-              MATE Website
+              MATE ROV Website
             </a>
           </div>
           <div className="overflow-hidden">
             <Image
-              src="https://uwrov.org/wp-content/uploads/2024/11/mate-2023_day-2-330.jpg"
-              alt="UWROV team at the 2023 MATE World Championship"
+              src="/gallery/main-pic.jpg"
+              alt="Suzu, Arnav, and Imants setting up surface station at MATE ROV 2026 World Championships"
               width={1024}
               height={512}
               className="w-full object-cover"
@@ -71,7 +67,6 @@ export default function CompetitionPage() {
         </div>
       </section>
 
-      {/* Results timeline */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Results</h2>
@@ -90,12 +85,11 @@ export default function CompetitionPage() {
         </div>
       </section>
 
-      {/* Worlds photo gallery */}
       <section className="py-20 pb-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Worlds Gallery</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">2026 MATE ROV World Championship Gallery</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Moments from our most recent trip to the MATE World Championship.
+            Moments from our most recent trip to the MATE World Championship in St. John's, Newfoundland and Labrador.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryPhotos.map((photo, i) => (

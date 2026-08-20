@@ -156,7 +156,6 @@ function MemberCard({ member }: { member: Member }) {
     <div className="group">
       <div className="aspect-square w-full overflow-hidden bg-[#0a0a0a] border border-white/10">
         {member.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={member.image}
             alt={member.name}
@@ -200,7 +199,6 @@ function MemberCard({ member }: { member: Member }) {
 export default function MeetTheTeamPage() {
   return (
     <div className="bg-black text-white">
-      {/* Header */}
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -227,7 +225,6 @@ export default function MeetTheTeamPage() {
         </div>
       </section>
 
-      {/* Chiefs */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Chiefs</h2>
@@ -244,7 +241,6 @@ export default function MeetTheTeamPage() {
         </div>
       </section>
 
-      {/* Leads */}
       <section className="pb-24 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto pt-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Leads</h2>
@@ -261,7 +257,6 @@ export default function MeetTheTeamPage() {
         </div>
       </section>
 
-      {/* Members */}
       <section className="pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto pt-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Members</h2>
