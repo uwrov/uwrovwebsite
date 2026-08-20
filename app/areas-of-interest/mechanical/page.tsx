@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import CadViewer from "@/components/CadViewer";
 
 export const metadata: Metadata = {
@@ -67,16 +68,34 @@ export default function MechanicalPage() {
 
           {SHOW_CAD_VIEWERS && (
             <div className="flex flex-col gap-6">
-              <CadViewer
-                src="/models/conduit-optimized.glb"
-                alt="UWROV ROV Conduit 3D CAD model."
-                orientation="90deg 270deg 270deg"
-              />
-              <CadViewer
-                src="/models/nanofloat-2-0.glb"
-                alt="NanoFloat 2.0 3D CAD model."
-                orientation="90deg 270deg 90deg"
-              />
+              <div>
+                <CadViewer
+                  src="/models/conduit-optimized.glb"
+                  alt="UWROV ROV Conduit 3D CAD model."
+                  orientation="90deg 270deg 270deg"
+                />
+                <p className="text-gray-400 text-base mt-3">
+                  <span className="text-white font-semibold">Conduit</span> — for more info, head to the{" "}
+                  <Link href="/rovs" className="text-[#a78bca] hover:text-white underline transition-colors">
+                    ROVs
+                  </Link>{" "}
+                  page.
+                </p>
+              </div>
+              <div>
+                <CadViewer
+                  src="/models/nanofloat-2-0.glb"
+                  alt="NanoFloat 2.0 3D CAD model."
+                  orientation="90deg 270deg 90deg"
+                />
+                <p className="text-gray-400 text-base mt-3">
+                  <span className="text-white font-semibold">NanoFloat 2.0</span> — for more info, head to the{" "}
+                  <Link href="/floats" className="text-[#a78bca] hover:text-white underline transition-colors">
+                    Floats
+                  </Link>{" "}
+                  page.
+                </p>
+              </div>
             </div>
           )}
         </div>
