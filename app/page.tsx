@@ -13,7 +13,7 @@ const teams = [
     name: "Mechanical",
     href: "/subteams/mechanical",
     description: "Designs and manufactures the frame, pressure hull, manipulator, and other systems using CAD software and rapid prototyping.",
-    image: "https://uwrov.org/wp-content/uploads/2024/10/cad-boxfish.png",
+    image: "/rov-cad.png",
   },
   {
     name: "Electrical",
@@ -31,7 +31,7 @@ const teams = [
     name: "Business",
     href: "/subteams/business",
     description: "Organizes outreach, connects with sponsors, and composes competition-critical materials including marketing displays and technical documentation.",
-    image: "https://uwrov.org/wp-content/uploads/2025/11/uwrov-marketing-display-2025-1-1.png",
+    image: "/business/2026-marketing-display.png",
   },
 ];
 
@@ -39,7 +39,7 @@ const achievements = [
   { stat: "Top 10", label: "MATE World Championship", sub: "5 consecutive years" },
   { stat: "1st", label: "Engineering Presentation", sub: "2025 MATE Championship" },
   { stat: "1st", label: "Technical Documentation", sub: "Published in Journal of Ocean Technology" },
-  { stat: "1st", label: "Machine Learning Challenge", sub: "2025 MATE Championship" },
+  { stat: "1st", label: "NOAA AI Challenge", sub: "2025 MATE Championship" },
 ];
 
 const openSource = [
@@ -87,7 +87,7 @@ export default function HomePage() {
               <div className="flex gap-4 flex-wrap">
                 <a href="https://together.uw.edu/campaign/uwrov2" target="_blank" rel="noopener noreferrer"
                   className="text-[#a78bca] hover:text-white text-xl transition-colors">Together UW</a>
-                <a href="/sponsors"
+                <a href="/outreach-and-sponsorship"
                   className="text-[#a78bca] hover:text-white text-xl transition-colors">Sponsors</a>
               </div>
             </div>
