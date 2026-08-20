@@ -38,13 +38,13 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Subteams</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Areas of Interest</h3>
             <ul className="space-y-2 text-sm">
               {[
-                ["Mechanical", "/subteams/mechanical"],
-                ["Electrical", "/subteams/electrical"],
-                ["Software", "/subteams/software"],
-                ["Business", "/subteams/business"],
+                ["Mechanical", "/areas-of-interest/mechanical"],
+                ["Electrical", "/areas-of-interest/electrical"],
+                ["Software", "/areas-of-interest/software"],
+                ["Business", "/areas-of-interest/business"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-purple-200 hover:text-white transition-colors">

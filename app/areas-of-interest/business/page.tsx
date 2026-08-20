@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Business Subteam",
-  description: "UWROV's Business subteam organizes outreach, connects with sponsors, and produces documentation and marketing materials for competition.",
+  title: "Business Area of Interest",
+  description: "UWROV's Business area of interest organizes outreach, connects with sponsors, and produces documentation and marketing materials for competition.",
 };
 
 export default function BusinessPage() {
@@ -13,13 +13,13 @@ export default function BusinessPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
-              Subteam
+              Area of Interest
             </div>
             <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
               Business
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              The Business subteam organizes outreach, connects with sponsors, and composes
+              The Business area of interest organizes outreach, connects with sponsors, and composes
               competition-critical materials including marketing displays and
               documentation.
             </p>

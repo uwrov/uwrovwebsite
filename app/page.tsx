@@ -11,35 +11,35 @@ export const metadata: Metadata = {
 const teams = [
   {
     name: "Mechanical",
-    href: "/subteams/mechanical",
+    href: "/areas-of-interest/mechanical",
     description: "Designs and manufactures the frame, pressure hull, manipulator, and other systems using CAD software and rapid prototyping.",
     image: "/rov-cad.png",
   },
   {
     name: "Electrical",
-    href: "/subteams/electrical",
+    href: "/areas-of-interest/electrical",
     description: "Designs and supports electronic systems including internal circuitry, sensors, and thrusters. Uses ECAD to design custom circuit boards.",
     image: "https://uwrov.org/wp-content/uploads/2024/11/rasppipcb.png",
   },
   {
     name: "Software",
-    href: "/subteams/software",
+    href: "/areas-of-interest/software",
     description: "Develops command & control software including pilot interfaces, autonomous systems, machine learning, and computer vision.",
     image: "https://uwrov.org/wp-content/uploads/2022/11/screen-shot-2022-11-03-at-5.02.17-pm.png",
   },
   {
     name: "Business",
-    href: "/subteams/business",
+    href: "/areas-of-interest/business",
     description: "Organizes outreach, connects with sponsors, and composes competition-critical materials including marketing displays and technical documentation.",
     image: "/business/2026-marketing-display.png",
   },
 ];
 
 const achievements = [
-  { stat: "Top 10", label: "MATE World Championship", sub: "5 consecutive years" },
-  { stat: "1st", label: "Engineering Presentation", sub: "2025 MATE Championship" },
+  { stat: "Top 10", label: "MATE ROV World Championship", sub: "5 consecutive years" },
+  { stat: "1st", label: "Engineering Presentation", sub: "2025 MATE ROV Championship" },
   { stat: "1st", label: "Technical Documentation", sub: "Published in Journal of Ocean Technology" },
-  { stat: "1st", label: "NOAA AI Challenge", sub: "2025 MATE Championship" },
+  { stat: "1st", label: "NOAA AI Challenge", sub: "2025 MATE ROV Championship" },
 ];
 
 const openSource = [
@@ -146,7 +146,7 @@ export default function HomePage() {
               <p>
                 UWROV was founded over 10 years ago by UW Oceanography students interested in ocean
                 technology and has continued to expand its scope to other engineering and marine science
-                disciplines ever since. Our team has competed in the MATE ROV Competition since 2011,
+                disciplines ever since. Our team has competed in the MATE ROV Competition since 2012,
                 as well as supporting regional events through volunteering and mentorship.
               </p>
               <p>
@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Our Work</h2>
           <p className="text-gray-400 mb-12 max-w-2xl">
-            Four specialized sub-teams collaborate to design, build, and operate world-class ROVs.
+            Four specialized areas of interest collaborate to design, build, and operate world-class ROVs.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {teams.map((team) => (

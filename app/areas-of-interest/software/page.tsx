@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Software Subteam",
-  description: "UWROV's Software subteam develops command and control software, pilot interfaces, autonomous systems, machine learning, and computer vision.",
+  title: "Software Area of Interest",
+  description: "UWROV's Software area of interest develops command and control software, pilot interfaces, autonomous systems, machine learning, and computer vision.",
 };
 
 export default function SoftwarePage() {
@@ -11,13 +11,13 @@ export default function SoftwarePage() {
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
-            Subteam
+            Area of Interest
           </div>
           <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
             Software
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-            The Software subteam develops command & control software including pilot
+            The Software area of interest develops command & control software including pilot
             interfaces, autonomous systems, machine learning, and computer vision.
           </p>
         </div>

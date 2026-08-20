@@ -12,10 +12,10 @@ const navLinks = [
 ];
 
 const subteamLinks = [
-  { href: "/subteams/mechanical", label: "Mechanical" },
-  { href: "/subteams/electrical", label: "Electrical" },
-  { href: "/subteams/software", label: "Software" },
-  { href: "/subteams/business", label: "Business" },
+  { href: "/areas-of-interest/mechanical", label: "Mechanical" },
+  { href: "/areas-of-interest/electrical", label: "Electrical" },
+  { href: "/areas-of-interest/software", label: "Software" },
+  { href: "/areas-of-interest/business", label: "Business" },
 ];
 
 export default function Navbar() {
@@ -61,7 +61,7 @@ export default function Navbar() {
                 onClick={() => setSubteamsOpen((o) => !o)}
                 className="flex items-center gap-1 text-base text-gray-600 hover:text-[#4b2e83] transition-colors duration-200 font-medium"
               >
-                Subteams
+                Areas of Interest
                 <svg
                   className={`w-3.5 h-3.5 transition-transform duration-200 ${
                     subteamsOpen ? "rotate-180" : ""
@@ -135,7 +135,7 @@ export default function Navbar() {
               onClick={() => setMobileSubteamsOpen((o) => !o)}
               className="w-full flex items-center justify-between text-gray-700 hover:text-[#4b2e83] py-2 text-base font-medium transition-colors"
             >
-              Subteams
+              Areas of Interest
               <svg
                 className={`w-4 h-4 transition-transform duration-200 ${
                   mobileSubteamsOpen ? "rotate-180" : ""
