@@ -40,7 +40,7 @@ const chiefs: Member[] = [
     grade: "2",
     major: "Computer Science",
     bio: "BIO",
-    image: "/maanasa.jpg",
+    image: "/headshots/maanasa.jpg",
     linkedin: "https://www.linkedin.com/in/kmaanasar",
   },
 ];

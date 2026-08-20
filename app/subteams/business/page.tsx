@@ -27,7 +27,7 @@ export default function BusinessPage() {
           <div>
             <div className="overflow-hidden">
               <Image
-                src="/2026-marketing-display.PNG"
+                src="/business/2026-marketing-display.PNG"
                 alt="UWROV 2026 marketing display"
                 width={600}
                 height={450}
@@ -86,7 +86,7 @@ export default function BusinessPage() {
             <div>
               <div className="overflow-hidden mb-5">
                 <Image
-                  src="/biz-tides-poster.PNG"
+                  src="/business/biz-tides-poster.PNG"
                   alt="UWROV Business subteam TIDES 2026 poster"
                   width={600}
                   height={450}
@@ -112,7 +112,7 @@ export default function BusinessPage() {
             <div>
               <div className="overflow-hidden mb-5">
                 <Image
-                  src="/liasus-fuscus-tour.jpg"
+                  src="/business/liasus-fuscus-tour.jpg"
                   alt="UWROV giving a shop tour and presentation to Liasus Fuscus, the Tesla STEM ROV team"
                   width={600}
                   height={450}
@@ -132,7 +132,7 @@ export default function BusinessPage() {
             <div>
               <div className="overflow-hidden mb-5">
                 <Image
-                  src="/regionals-volunteering.PNG"
+                  src="/business/regionals-volunteering.PNG"
                   alt="UWROV members volunteering at the MATE PNW Regionals competition"
                   width={600}
                   height={450}

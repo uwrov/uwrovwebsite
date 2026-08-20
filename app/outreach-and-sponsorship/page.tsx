@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 };
 
 const currentSponsors = [
-  { name: "MATE ROV", logo: "/mate-rov-logo.png", url: "https://materovcompetition.org/" },
-  { name: "APL UW", logo: "/apl-logo.png", url: "https://www.apl.washington.edu/" },
-  { name: "School of Oceanography", logo: "/oceanography-logo.png", url: "https://www.ocean.washington.edu/" },
-  { name: "Spokbee", logo: "/spokbee-logo.png", url: "https://www.spokbee.com/" },
-  { name: "Student Technology Fund", logo: "/stf-logo.png", url: "https://techfee.uw.edu/" }
+  { name: "MATE ROV", logo: "/sponsors/mate-rov-logo.png", url: "https://materovcompetition.org/" },
+  { name: "APL UW", logo: "/sponsors/apl-logo.png", url: "https://www.apl.washington.edu/" },
+  { name: "School of Oceanography", logo: "/sponsors/oceanography-logo.png", url: "https://www.ocean.washington.edu/" },
+  { name: "Spokbee", logo: "/sponsors/spokbee-logo.png", url: "https://www.spokbee.com/" },
+  { name: "Student Technology Fund", logo: "/sponsors/stf-logo.png", url: "https://techfee.uw.edu/" }
 ];
 
 export default function SponsorsPage() {
