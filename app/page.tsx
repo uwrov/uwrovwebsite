@@ -151,8 +151,8 @@ export default function HomePage() {
               </p>
               <p>
                 We continued our streak of top 10 finishes, placing 9th overall at the 2026 MATE World
-                Championships, performing very well with our engineering presentation and technical documentation, 
-                earning 2nd and 3rd place, respectively.
+                Championships. We also performed very well with our engineering presentation and technical 
+                documentation, earning 2nd and 3rd place, respectively.
               </p>
               <p>
                 We strive to continue giving UW students hands-on experience in ocean technology,
