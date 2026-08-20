@@ -44,7 +44,7 @@ const achievements = [
 
 const openSource = [
   { label: "Conduit CAD & Documentation", href: "https://cad.onshape.com/documents/2431b47474912c7fcf9ae98a/v/e3a0675bc40d934690e92318/e/006fa2a35d00be74e44bb0da" },
-  { label: "T-200 Thruster Guards", href: "https://uwrov.org/2023/06/23/uwrov-t-200-thruster-module/" },
+  { label: "T-200 Thruster Guards", href: "https://cad.onshape.com/documents/37579460300adf35ea568546/v/cf29c004786ca8efba480859/e/da8649d24aa2330f7b6b2175" },
   { label: "GitHub", href: "https://github.com/uwrov" },
   { label: "Past ROVs", href: "/rovs" },
   { label: "Past Floats", href: "/floats" }
