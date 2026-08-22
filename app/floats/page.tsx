@@ -17,7 +17,7 @@ export default function FloatsPage() {
             Floats
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-            Our autonomous float systems designed and built for the MATE ROV Competition.
+            UWROV's autonomous float systems designed and built for the MATE ROV Competition.
           </p>
         </div>
       </section>

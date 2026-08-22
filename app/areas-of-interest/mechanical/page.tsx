@@ -13,14 +13,14 @@ type GalleryPhoto = { src?: string; caption: string };
 const SHOW_CAD_VIEWERS = true;
 
 const galleryPhotos: GalleryPhoto[] = [
-  { src: "/gallery/mechanical1.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical2.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical3.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical4.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical5.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical6.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical7.jpg", caption: "Mechanical team at work" },
-  { src: "/gallery/mechanical8.jpg", caption: "Mechanical team at work" },
+  { src: "/gallery/mechanical1.jpg", caption: "Luke operating the lathe." },
+  { src: "/gallery/mechanical2.jpg", caption: "Suzu, Oz, and Dorah assembling Conduit's core." },
+  { src: "/gallery/mechanical3.jpg", caption: "Emmett, Marcus, and Rohan presenting Gantry poster at Undergrad Research Symposium." },
+  { src: "/gallery/mechanical8.JPG", caption: "Abi quickly disassembling float during run." },
+  { src: "/gallery/mechanical5.jpg", caption: "Marcus operating drill press." },
+  { src: "/gallery/mechanical6.JPG", caption: "Emmett installing pool noodle on Conduit." },
+  { src: "/gallery/mechanical7.jpg", caption: "Marcus deploying NanoFloat 2.0." },
+  { src: "/gallery/mechanical4.jpg", caption: "Imants deploying Conduit." },
 ];
 
 export default function MechanicalPage() {
@@ -45,22 +45,29 @@ export default function MechanicalPage() {
               <div className="border-l-4 border-[#4b2e83] pl-5">
                 <h3 className="text-white font-bold text-lg mb-2">Design</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We use CAD software to design every component of the ROV before manufacturing,
-                  ensuring everything fits together precisely and meets competition requirements.
+                  UWROV uses Onshape to collaborate and design every component of the ROV before
+                  manufacturing, ensuring every part fits together precisely while meeting competition
+                  requirements. Simulations are done through SolidWorks, allowing UWROV to confidently
+                  produce working parts of the ROV and float.
                 </p>
               </div>
               <div className="border-l-4 border-[#4b2e83] pl-5">
                 <h3 className="text-white font-bold text-lg mb-2">Fabrication</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  From 3D printing to machining, we fabricate the parts that make up our ROV
-                  using the tools and resources available at UW.
+                  Tools and resources available in the UWROV shop space and across campus are used to
+                  fabricate the components that make up the ROV. 3D printers, power tools, and shop
+                  machinery allow for the production of parts from a wide range of materials almost
+                  entirely in-house. Members are machine-certified through safety and operating procedures
+                  compiled by UWROV.
                 </p>
               </div>
               <div className="border-l-4 border-[#4b2e83] pl-5">
                 <h3 className="text-white font-bold text-lg mb-2">Documentation</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We maintain detailed technical documentation of our designs and manufacturing
-                  processes to support competition requirements and knowledge transfer across the team.
+                  UWROV maintains detailed technical documentation of all design, development, and
+                  manufacturing processes to support competition requirements while creating resources
+                  for knowledge transfer across the team. Documentation is compiled into a comprehensive
+                  25-page report following competition rubrics, which is open sourced each year. 
                 </p>
               </div>
             </div>
@@ -74,12 +81,10 @@ export default function MechanicalPage() {
                   alt="UWROV ROV Conduit 3D CAD model."
                   orientation="90deg 270deg 270deg"
                 />
-                <p className="text-gray-400 text-base mt-3">
-                  <span className="text-white font-semibold">Conduit</span> — for more info, head to the{" "}
-                  <Link href="/rovs" className="text-[#a78bca] hover:text-white underline transition-colors">
-                    ROVs
+                <p className="text-center mt-3">
+                  <Link href="/rovs" className="text-white font-semibold hover:text-[#a78bca] transition-colors">
+                    ROV Conduit
                   </Link>{" "}
-                  page.
                 </p>
               </div>
               <div>
@@ -88,12 +93,10 @@ export default function MechanicalPage() {
                   alt="NanoFloat 2.0 3D CAD model."
                   orientation="90deg 270deg 90deg"
                 />
-                <p className="text-gray-400 text-base mt-3">
-                  <span className="text-white font-semibold">NanoFloat 2.0</span> — for more info, head to the{" "}
-                  <Link href="/floats" className="text-[#a78bca] hover:text-white underline transition-colors">
-                    Floats
+                <p className="text-center mt-3">
+                  <Link href="/floats" className="text-white font-semibold hover:text-[#a78bca] transition-colors">
+                    NanoFloat 2.0
                   </Link>{" "}
-                  page.
                 </p>
               </div>
             </div>

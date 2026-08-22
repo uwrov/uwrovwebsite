@@ -41,7 +41,7 @@ export default function CompetitionPage() {
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg mb-8">
               The MATE ROV Competition tasks students with building their own underwater
               remotely operated vehicles and vertical profiling float systems, developing skills crucial to 
-              solving real-world ocean problems. We compete in the Explorer Class, which is the collegiate class in the competition,
+              solving real-world ocean problems. UWROV competes in the Explorer Class, which is the collegiate class in the competition,
               where teams are expected to perform at a high level from vehicle engineering and demonstrations to technical and marketing
               documentation.
             </p>
@@ -71,7 +71,7 @@ export default function CompetitionPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Process</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Our season runs in structured phases aligned with the timing of the MATE RFP,
+            UWROV's season runs in structured phases aligned with the timing of the MATE RFP,
             marked by milestone-driven events that set deadlines and performance expectations.
           </p>
           <div className="overflow-hidden border border-white/10 bg-black p-4 sm:p-6 mb-10">
@@ -85,7 +85,7 @@ export default function CompetitionPage() {
           </div>
           <div className="grid sm:grid-cols-3 gap-8 text-gray-400 leading-relaxed">
             <p>
-              Our season starts with onboarding, built around Mini-MATE, which is an in-house,
+              UWROV's season starts with onboarding, built around Mini-MATE, which is an in-house,
               8-week version of the MATE ROV Competition. New members train in small
               groups with lead mentorship and demonstrate their skills at the Mini-MATE
               Competition in late November, just before the year&apos;s MATE RFP is released.
@@ -94,13 +94,13 @@ export default function CompetitionPage() {
               Ideation begins once onboarding wraps up, kicking off the prototyping and
               integration phases. These phases intentionally overlap to reflect our
               iterative design process. A proof of concept is required by the UWROV
-              Winter Expo in early March, where we present our core concept and prototype
+              Winter Expo in early March, where UWROV presents their core concept and prototype
               to stakeholders.
             </p>
             <p>
-              After further refinement, we move into deployments, testing tasks from the
+              After further refinement, UWROV moves into deployments, testing tasks from the
               MATE RFP in water. Field readiness is demonstrated at the UWROV Open House
-              in early May, where we run live pool deployments for the public.
+              in early May, where UWROV runs live pool deployments for the public.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function CompetitionPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Our Results</h2>
           <p className="text-gray-400 mb-12 max-w-2xl">
-            We&apos;ve placed within the top 10 consistently over the last several years.
+            UWROV placed within the top 10 consistently over the last several years.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {results.map((r) => (
@@ -127,8 +127,8 @@ export default function CompetitionPage() {
       <section className="py-20 pb-28 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">2026 MATE ROV World Championship Gallery</h2>
-          <p className="text-gray-400 mb-10 max-w-2xl">
-            Moments from our most recent trip to the MATE World Championship held in St. John&apos;s, Newfoundland and Labrador, Canada.
+          <p className="text-gray-400 mb-10">
+            Moments from UWROV's most recent trip to the MATE World Championship held in St. John&apos;s, Newfoundland and Labrador, Canada.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryPhotos.map((photo, i) => (

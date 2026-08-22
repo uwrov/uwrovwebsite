@@ -49,7 +49,7 @@ export default function BusinessPage() {
             <div className="border-l-4 border-[#4b2e83] pl-5">
               <h3 className="text-white font-bold text-lg mb-2">Cost & Accounting</h3>
               <p className="text-gray-400 leading-relaxed">
-                We manage the team's budget and track all expenses throughout the season,
+                UWROV manages the team's budget and tracks all expenses throughout the season,
                 maintaining detailed cost accounting records to ensure responsible use of
                 funds across materials, manufacturing, and travel.
               </p>
@@ -57,21 +57,21 @@ export default function BusinessPage() {
             <div className="border-l-4 border-[#4b2e83] pl-5">
               <h3 className="text-white font-bold text-lg mb-2">Marketing Display</h3>
               <p className="text-gray-400 leading-relaxed">
-                We design and produce the marketing display presented at competition,
-                showcasing our ROV, Float, and team to judges and other teams.
+                UWROV designs and produces the marketing display presented at competition,
+                showcasing their ROV, Float, and team to judges and other teams.
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
               <h3 className="text-white font-bold text-lg mb-2">Sponsorship</h3>
               <p className="text-gray-400 leading-relaxed">
-                We reach out to and manage relationships with sponsors who help fund
+                UWROV reaches out to and manages relationships with sponsors who help fund
                 the team's materials, travel, and competition fees.
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
               <h3 className="text-white font-bold text-lg mb-2">Outreach</h3>
               <p className="text-gray-400 leading-relaxed">
-                We organize outreach events including workshops that introduce
+                UWROV organizes outreach events including workshops that introduce
                 K-12 students to underwater robotics and ocean technology.
               </p>
             </div>
@@ -125,7 +125,7 @@ export default function BusinessPage() {
               <h3 className="text-xl font-bold text-white mb-3">Liasus Fuscus Mentorship</h3>
               <p className="text-gray-400 leading-relaxed">
                 UWROV hosted Liasus Fuscus, the Tesla STEM High School ROV team, for a shop
-                tour and presentation, sharing our design process and mentoring teams in the Ranger class.
+                tour and presentation, sharing their design process and mentoring teams in the Ranger class.
               </p>
             </div>
 

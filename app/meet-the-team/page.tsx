@@ -4,14 +4,14 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
-    "Meet the students leading UWROV. Our chiefs and leads work across mechanical, electrical, software, floats, and community.",
+    "Meet the students leading UWROV. The chiefs and leads work across mechanical, electrical, software, floats, and community.",
 };
 
 type Member = {
   name: string;
   role: string;
-  grade: string;
-  major: string;
+  grade?: string;
+  major?: string;
   bio: string;
   image?: string;
   linkedin?: string;
@@ -51,7 +51,8 @@ const leads: Member[] = [
     role: "Mechanical Lead",
     grade: "4",
     major: "Microbiology; Education",
-    bio: "BIO",
+    bio: "Passionate about ocean technology with experience with AUV/ROV/float operations, STEM education, and project management. After hours, I'm a national-level speed typist who enjoys discussing mechanical keyboards and typing. Reach out at yoshisuz@uw.edu! I'd love to talk :)",
+    image: "/headshots/suzu.jpg",
     linkedin: "https://www.linkedin.com/in/suzuyoshi",
   },
   {
@@ -98,7 +99,7 @@ const leads: Member[] = [
     name: "Jerry Chan",
     role: "Community Lead",
     grade: "3",
-    major: "Material Science and Engineering",
+    major: "Materials Science and Engineering",
     bio: "BIO",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
@@ -129,6 +130,19 @@ const members: string[] = [
   "Sannie Wan",
 ];
 
+const mentors: Member[] = [
+  {
+    name: "Rick Rupan",
+    role: "Mentor",
+    bio: "BIO",
+  },
+  {
+    name: "Alnis Smidchens",
+    role: "Mentor",
+    bio: "BIO",
+  },
+];
+
 function initials(name: string) {
   return name
     .split(" ")
@@ -155,9 +169,7 @@ function MemberCard({ member }: { member: Member }) {
   return (
     <div className="group">
       <div className="[perspective:1000px] w-full aspect-square">
-        <div
-          className="relative w-full h-full transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
-        >
+        <div className="relative w-full h-full transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 [backface-visibility:hidden] bg-[#0a0a0a] border border-white/10 overflow-hidden">
             {member.image ? (
               <img
@@ -173,13 +185,11 @@ function MemberCard({ member }: { member: Member }) {
               </div>
             )}
           </div>
-
           <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#0a0a0a] border border-[#4b2e83] overflow-y-auto p-5 flex flex-col justify-center">
             <p className="text-gray-300 text-sm leading-relaxed">{member.bio}</p>
           </div>
         </div>
       </div>
-
       <div className="pt-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-[#a78bca] mb-1">
           {member.role}
@@ -198,9 +208,11 @@ function MemberCard({ member }: { member: Member }) {
             </a>
           )}
         </div>
-        <p className="text-gray-400 text-sm">
-          {member.grade} &middot; {member.major}
-        </p>
+        {(member.grade || member.major) && (
+          <p className="text-gray-400 text-sm">
+            {member.grade}{member.grade && member.major ? " · " : ""}{member.major}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -219,8 +231,8 @@ export default function MeetTheTeamPage() {
               Meet the Team
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
-              UWROV is run entirely by students. Our chiefs and leads coordinate the
-              engineering, operations, and community that make our work possible.
+              UWROV is run entirely by students. The chiefs and leads coordinate the
+              engineering, operations, and community that make the team's work possible.
             </p>
           </div>
           <div className="overflow-hidden">
@@ -239,7 +251,7 @@ export default function MeetTheTeamPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Chiefs</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Our three chiefs — CEO, CTO, and CAO.
+            UWROV's three chiefs: CEO, CTO, and CAO.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
             {chiefs.map((member, i) => (
@@ -271,13 +283,29 @@ export default function MeetTheTeamPage() {
         <div className="max-w-7xl mx-auto pt-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Members</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            The students who design, build, and operate our ROVs and Floats every season.
+            The students who design, build, and operate UWROV's ROVs and Floats every season.
           </p>
           <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
             {members.map((name, i) => (
               <p key={i} className="text-white text-base border-b border-white/10 pb-3">
                 {name}
               </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-24 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto pt-20">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Mentors</h2>
+          <p className="text-gray-400 mb-10 max-w-2xl">
+            Faculty and industry mentors who guide and support the team.
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
+            {mentors.map((member, i) => (
+              <div key={i} className="w-full sm:w-[calc(50%_-_1rem)] lg:w-[calc(25%_-_1.5rem)]">
+                <MemberCard member={member} />
+              </div>
             ))}
           </div>
         </div>

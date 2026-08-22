@@ -37,8 +37,8 @@ const teams = [
 
 const achievements = [
   { stat: "Top 10", label: "MATE ROV World Championship", sub: "5 consecutive years" },
-  { stat: "1st", label: "Engineering Presentation", sub: "2025 MATE ROV Championship" },
-  { stat: "1st", label: "Technical Documentation", sub: "Published in Journal of Ocean Technology" },
+  { stat: "2nd", label: "Engineering Presentation", sub: "2026 MATE ROV Championship" },
+  { stat: "3rd", label: "Technical Documentation", sub: "2026 MATE ROV Championship" },
   { stat: "1st", label: "NOAA AI Challenge", sub: "2025 MATE ROV Championship" },
 ];
 
@@ -65,7 +65,7 @@ export default function HomePage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
               The Underwater Remotely Operated Vehicles Team (UWROV) at the University of Washington
-              is an interdisciplinary RSO where students make underwater robots. Our unique mix of
+              is an interdisciplinary RSO where students make underwater robots. The team's unique mix of
               passion in both oceanography and engineering results in amazing ROVs and a fun team culture.
             </p>
             <p className="text-white font-semibold text-2xl mb-4">Would you like to join us?</p>
@@ -141,16 +141,16 @@ export default function HomePage() {
               <p>
                 UWROV was founded over 10 years ago by UW Oceanography students interested in ocean
                 technology and has continued to expand its scope to other engineering and marine science
-                disciplines ever since. Our team has competed in the MATE ROV Competition since 2012,
+                disciplines ever since. The team has competed in the MATE ROV Competition since 2012,
                 as well as supporting regional events through volunteering and mentorship.
               </p>
               <p>
-                We continued our streak of top 10 finishes, placing 9th overall at the 2026 MATE World
-                Championships. We also performed very well with our engineering presentation and technical 
+                UWROV continued their streak of top 10 finishes, placing 9th overall at the 2026 MATE World
+                Championships. UWROV also performed very well with their engineering presentation and technical 
                 documentation, earning 2nd and 3rd place, respectively.
               </p>
               <p>
-                We strive to continue giving UW students hands-on experience in ocean technology,
+                UWROV strives to continue giving UW students hands-on experience in ocean technology,
                 interdisciplinary engineering, and professional skills.
               </p>
             </div>

@@ -35,10 +35,10 @@ export default function ContactPage() {
 
           <p>
             Applications are currently open, and can be accessed via the button above. The
-            priority application is due <strong className="text-white">October 9th, 2026</strong> at midnight. They
-            are reviewed on a rolling basis afterwards. Please note the response time
-            will be slower after October 9th. Additionally, if you would like to be on our
-            interest form to get updates about recruitment events and the application, please
+            priority application is due <strong className="text-white">October 9th, 2026</strong> at midnight. 
+            Afterwards, they are reviewed on a rolling basis starting Winter quarter. Please note the response time
+            will be slower. Additionally, if you would like to be on our interest form to get updates about recruitment
+            events and the application, please
             fill out{" "}
             <a href="https://forms.gle/FG2S4DXpFARHccnb8" className="text-[#a78bda] underline hover:text-white transition-colors">
               this form.
