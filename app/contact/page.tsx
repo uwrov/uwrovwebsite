@@ -15,7 +15,7 @@ export default function ContactPage() {
 
         <div className="text-center">
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe7Hrpp_nH02SkSalhhOX88CfFylBclX1ZYPnaRywgFxi2-PA/viewform?usp=header"
             className="inline-block mt-4 mb-10 bg-[#4b2e83] text-white font-semibold px-6 py-2.5"
           >
             Apply Now
@@ -27,10 +27,6 @@ export default function ContactPage() {
             Our members study Engineering, Computer Science, Oceanography, Marine Biology,
             Environmental Health, and more. We encourage you to apply regardless of your
             academic background!
-          </p>
-
-          <p className="text-center font-semibold text-[#a78bda]">
-            2026–2027 Application Form Coming Soon!
           </p>
 
           <p>

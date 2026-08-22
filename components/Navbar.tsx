@@ -8,7 +8,8 @@ const navLinks = [
   { href: "/competition", label: "The Competition" },
   { href: "/rovs", label: "ROVs" },
   { href: "/floats", label: "Floats" },
-  { href: "/outreach-and-sponsorship", label: "Sponsorship" }
+  { href: "/outreach-and-sponsorship", label: "Sponsorship" },
+  { href: "/contact", label: "Contact Us" }
 ];
 
 const subteamLinks = [
