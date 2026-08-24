@@ -14,13 +14,13 @@ const SHOW_CAD_VIEWERS = true;
 
 const galleryPhotos: GalleryPhoto[] = [
   { src: "/gallery/mechanical1.jpg", caption: "Luke operating the lathe." },
-  { src: "/gallery/mechanical2.jpg", caption: "Suzu, Oz, and Dorah assembling Conduit's core." },
-  { src: "/gallery/mechanical3.jpg", caption: "Emmett, Marcus, and Rohan presenting Gantry poster at Undergrad Research Symposium." },
-  { src: "/gallery/mechanical8.JPG", caption: "Abi quickly disassembling float during run." },
-  { src: "/gallery/mechanical5.jpg", caption: "Marcus operating drill press." },
   { src: "/gallery/mechanical6.JPG", caption: "Emmett installing pool noodle on Conduit." },
-  { src: "/gallery/mechanical7.jpg", caption: "Marcus deploying NanoFloat 2.0." },
+  { src: "/gallery/mechanical3.jpg", caption: "Emmett, Marcus, and Rohan presenting Gantry poster at Undergrad Research Symposium." },
   { src: "/gallery/mechanical4.jpg", caption: "Imants deploying Conduit." },
+  { src: "/gallery/mechanical5.jpg", caption: "Marcus operating drill press." },
+  { src: "/gallery/mechanical2.jpg", caption: "Suzu, Oz, and Dorah assembling Conduit's core." },
+  { src: "/gallery/mechanical7.jpg", caption: "Marcus deploying NanoFloat 2.0." },
+  { src: "/gallery/mechanical8.JPG", caption: "Abi quickly disassembling float during run." },
 ];
 
 export default function MechanicalPage() {
@@ -108,7 +108,7 @@ export default function MechanicalPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Photo Gallery</h2>
           <p className="text-gray-400 mb-10 max-w-2xl">
-            Moments from the Mechanical team's design and build process.
+            Moments from UWROV’s mechanical design and fabrication
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryPhotos.map((photo, i) => (

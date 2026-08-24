@@ -59,10 +59,13 @@ export default function HomePage() {
             <div className="inline-block bg-[#4b2e83] text-white text-sm font-semibold uppercase tracking-wider px-3 py-1.5 mb-6">
               University of Washington
             </div>
-            <h1 className="text-6xl sm:text-7xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Learn, Design,{" "}
-              <span className="text-[#4b2e83]">Build.</span>
+            <h1 className="text-6xl sm:text-7xl lg:text-6xl font-black text-white leading-tight mb-3">
+              Guide the{" "}
+              <span className="text-[#4b2e83]">Wave</span>
             </h1>
+            <p className="text-gray-400 text-2xl font-medium mb-8">
+              Leading the next generation in ocean tech.
+            </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
               The Underwater Remotely Operated Vehicles Team (UWROV) at the University of Washington
               is an interdisciplinary RSO where students make underwater robots. The team's unique mix of
@@ -209,7 +212,7 @@ export default function HomePage() {
               className="bg-black text-white font-bold px-8 py-3 hover:bg-gray-900 transition-colors">
               Apply Now
             </a>
-            <Link href="/contact"
+            <Link href="/contact#contact-info"
               className="border-2 border-white text-white font-semibold px-8 py-3 hover:bg-white/10 transition-colors">
               Get in Touch
             </Link>

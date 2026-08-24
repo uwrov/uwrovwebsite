@@ -51,28 +51,39 @@ export default function BusinessPage() {
               <p className="text-gray-400 leading-relaxed">
                 UWROV manages the team's budget and tracks all expenses throughout the season,
                 maintaining detailed cost accounting records to ensure responsible use of
-                funds across materials, manufacturing, and travel.
+                funds across materials, manufacturing, and travel. This process also feeds
+                directly into the cost accounting report required for MATE ROV competition
+                judging each year.
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Marketing Display</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Marketing</h3>
               <p className="text-gray-400 leading-relaxed">
-                UWROV designs and produces the marketing display presented at competition,
-                showcasing their ROV, Float, and team to judges and other teams.
+                Social media and offline marketing designs are created using Canva to help
+                promote the team to University of Washington undergraduates and keep up with
+                the local community. UWROV designs and produces the marketing display presented
+                at competition, showcasing their ROV, Float, and team to judges and other teams. 
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Sponsorship</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Sponsorship & Outreach</h3>
               <p className="text-gray-400 leading-relaxed">
-                UWROV reaches out to and manages relationships with sponsors who help fund
-                the team's materials, travel, and competition fees.
+                UWROV reaches out to and manages relationships with sponsors who help fund the
+                team's materials, travel, and competition fees. UWROV organizes outreach events,
+                including workshops that introduce K-12 students to underwater robotics and ocean
+                technology, as well as longer-term mentorship to high school ROV teams both locally
+                and across the country.
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Outreach</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Project Management</h3>
               <p className="text-gray-400 leading-relaxed">
-                UWROV organizes outreach events including workshops that introduce
-                K-12 students to underwater robotics and ocean technology.
+                 UWROV keeps the team running behind the scenes, coordinating meeting
+                 logistics, managing internal communication, and ensuring every project
+                 has what it needs to hit its deadlines throughout the season. This
+                 includes organizing travel and lodging for competitions, maintaining
+                 shop access and safety protocols, and helping onboard new members so
+                 they can get up to speed quickly and start contributing.
               </p>
             </div>
           </div>
