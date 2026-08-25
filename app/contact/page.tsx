@@ -15,7 +15,7 @@ export default function ContactPage() {
 
         <div className="text-center">
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe7Hrpp_nH02SkSalhhOX88CfFylBclX1ZYPnaRywgFxi2-PA/viewform?usp=header"
             className="inline-block mt-4 mb-10 bg-[#4b2e83] text-white font-semibold px-6 py-2.5"
           >
             Apply Now
@@ -29,16 +29,12 @@ export default function ContactPage() {
             academic background!
           </p>
 
-          <p className="text-center font-semibold text-[#a78bda]">
-            2026–2027 Application Form Coming Soon!
-          </p>
-
           <p>
             Applications are currently open, and can be accessed via the button above. The
-            priority application is due <strong className="text-white">October 9th, 2026</strong> at midnight. They
-            are reviewed on a rolling basis afterwards. Please note the response time
-            will be slower after October 9th. Additionally, if you would like to be on our
-            interest form to get updates about recruitment events and the application, please
+            priority application is due <strong className="text-white">October 9th, 2026</strong> at midnight. 
+            Afterwards, they are reviewed on a rolling basis starting Winter quarter. Please note the response time
+            will be slower. Additionally, if you would like to be on our interest form to get updates about recruitment
+            events and the application, please
             fill out{" "}
             <a href="https://forms.gle/FG2S4DXpFARHccnb8" className="text-[#a78bda] underline hover:text-white transition-colors">
               this form.
