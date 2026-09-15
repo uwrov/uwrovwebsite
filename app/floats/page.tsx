@@ -61,7 +61,7 @@ const galleryPhotos: GalleryPhoto[] = [
           <div>
             <div className="overflow-hidden mb-5">
               <Image
-                src="/float/placeholder-image.png"
+                src="/float/mate_floats_worksop_pres.jpg"
                 alt="UWROV members presenting at the MATE Floats! Summer Workshop at the University of Washington."
                 width={200}
                 height={100}
@@ -73,7 +73,7 @@ const galleryPhotos: GalleryPhoto[] = [
             </div>
             <h3 className="text-xl font-bold text-white mb-3">MATE Floats! Summer Workshop Presentation</h3>
             <p className="text-gray-400 leading-relaxed">
-              Description
+               {/* UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, and Luke Wells presented */}
             </p>
           </div>
 
