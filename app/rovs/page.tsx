@@ -60,7 +60,7 @@ const pastRovs: Rov[] = [
     links: [
       { label: "Boxfish CAD", href: "https://cad.onshape.com/documents/708ef7b2d84cc3d41cbb8714/w/3c9d928e347628ae9a3dec7b/e/59368aacfd422aebf028aee6" },
     ],
-    image: "/rovs/boxfish.jpg",
+    image: "/rovs/boxfish.png",
   },
   {
     name: "Barreleye",
@@ -74,7 +74,7 @@ const pastRovs: Rov[] = [
       { label: "Barreleye Technical Documentation", href: "https://www.thejot.net/article-preview/?show_article_preview=1476" },
       { label: "Barreleye Reveal Video", href: "https://www.youtube.com/watch?v=DPvauXS2nJE" },
     ],
-    image: "/rovs/barreleye.jpg",
+    image: "/rovs/barreleye.png",
   },
   {
     name: "Nautilus",
