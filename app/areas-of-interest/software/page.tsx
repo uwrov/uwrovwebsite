@@ -59,10 +59,10 @@ export default function SoftwarePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">What We Do</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Pilot Interface</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Simulation</h3>
               <p className="text-gray-400 leading-relaxed">
-                We build the control software that pilots use to operate the ROV in real
-                time, including game controller input and camera feeds.
+                Using Godot, our simulation allows pilots to train for piloting the ROV, 
+                including game controller input, realistic physics, and simulated camera feeds. 
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
@@ -80,10 +80,10 @@ export default function SoftwarePage() {
               </p>
             </div>
             <div className="border-l-4 border-[#4b2e83] pl-5">
-              <h3 className="text-white font-bold text-lg mb-2">Computer Vision</h3>
+              <h3 className="text-white font-bold text-lg mb-2">Infrastructure</h3>
               <p className="text-gray-400 leading-relaxed">
-                We use computer vision to help the ROV identify and interact with
-                objects during competition missions.
+                We use a combination of existing and custom scripts to synchronize the cameras, 
+                thrusters, and sensors on our ROV and our float.
               </p>
             </div>
           </div>
