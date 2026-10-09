@@ -97,7 +97,10 @@ const galleryPhotos: GalleryPhoto[] = [
             </div>
             <h3 className="text-xl font-bold text-white mb-3">MATE Floats! Summer Workshop Presentation</h3>
             <p className="text-gray-400 leading-relaxed">
-               UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, and Luke Wells presented about NanoFloat 2.0 at the MATE Floats! Summer Workshop at the University of Washington.
+               UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, and Luke Wells presented about <em>NanoFloat 2.0</em> at the MATE Floats! Summer Workshop at the University of Washington.
+            </p>
+            <p className="text-gray-400 leading-relaxed py-4">  
+               This presentation provided the students attending with detail on the electrical, firmware, and mechanical design of the float and ended with hands on interaction with the float and its components. 
             </p>
           </div>
 
