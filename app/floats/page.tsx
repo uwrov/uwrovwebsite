@@ -56,7 +56,31 @@ const galleryPhotos: GalleryPhoto[] = [
             </h2>
         </div>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 items-start">
+
+          <div>
+            <div className="overflow-hidden mb-5">
+              <Image
+                src="/float/nanofloat_ieeeoceans.jpeg"
+                alt="UWROV members presenting at the IEEE OCEANS Monterey 2026 Conference."
+                width={200}
+                height={100}
+                className="w-full object-cover"
+              />
+            </div>
+            <div className="inline-block bg-[#4b2e83] text-white text-xs font-semibold uppercase tracking-wider px-3 py-1.5 mb-3">
+              Professional Development
+            </div>
+            <h3 className="text-xl font-bold text-white mb-3">IEEE OCEANS Monterey 2026</h3>
+            <p className="text-gray-400 leading-relaxed">
+              At the IEEE OCEANS Monterey 2026 conference, UWROV members Abirami Subramanian and Krishna Maanasa Ramadugu presented the newest iteration of <em>"Development of nanOS: Profiling Float Firmware System"</em>.
+            </p>
+            <p className="text-gray-400 leading-relaxed py-4">
+              The poster detailed <em>NanoFloat 2.0</em>'s electrical structure and demonstrated the architecture of it's custom firmware, nanOS. 
+              It also included real data collected from <em>NanoFloat 2.0</em>'s deployments and potential research applications for the float's data collection capabilities
+              in marine carbon dioxide removal verification.
+            </p>
+          </div>
 
           <div>
             <div className="overflow-hidden mb-5">
@@ -73,7 +97,7 @@ const galleryPhotos: GalleryPhoto[] = [
             </div>
             <h3 className="text-xl font-bold text-white mb-3">MATE Floats! Summer Workshop Presentation</h3>
             <p className="text-gray-400 leading-relaxed">
-               {/* UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, and Luke Wells presented */}
+               UWROV members Suzu Yoshikawa, Krishna Maanasa Ramadugu, and Luke Wells presented about NanoFloat 2.0 at the MATE Floats! Summer Workshop at the University of Washington.
             </p>
           </div>
 
