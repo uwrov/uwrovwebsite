@@ -33,6 +33,7 @@ const chiefs: Member[] = [
     grade: "3",
     major: "Mechanical Engineering; Mechatronics",
     bio: "I’ve been working on some form of robotics for 7 years, and am excited to continue and see where it takes me! Outside of UWROV I enjoy reading and making small gadgets.",
+    image: "/headshots/marcus.jpeg",
     linkedin: "https://www.linkedin.com/in/marcus-kwek-89609533b/",
   },
   {
@@ -62,6 +63,7 @@ const leads: Member[] = [
     grade: "2",
     major: "Mechanical Engineering",
     bio: "I have been involved with the MATE ROV competition since 2019 and have participated in 6 competitions. I am experienced in CAD, 3D printing, and am excited to learn and practice machining skills. On the side I enjoy reading, music, origami, working on miscellaneous engineering projects, and dabbling in electronics repair.",
+    image: "/headshots/emmett.jpeg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
@@ -69,7 +71,8 @@ const leads: Member[] = [
     role: "Software Lead",
     grade: "4",
     major: "Computer Science",
-    bio: "BIO",
+    bio: " I’ve been in various robotics teams for 10+ years, and I’m now having a lot of fun exploring the applications of various disciplines of computer science to underwater vehicles. Also, I do research with the Allen School in imitation learning, reinforcement learning, and robot learning at large.",
+    image: "/headshots/quinn.jpeg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
@@ -77,7 +80,8 @@ const leads: Member[] = [
     role: "Software Lead",
     grade: "2",
     major: "Mathematics",
-    bio: "BIO",
+    bio: "I’ve been involved in robotics since elementary school, heavily involved with FIRST competitions. Outside of the club, I enjoy creating full stack projects, and playing chess.",
+    image: "/headshots/arnav.jpg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
@@ -86,6 +90,7 @@ const leads: Member[] = [
     grade: "2",
     major: "Electrical and Computer Engineering",
     bio: "BIO",
+    image: "/headshots/aadithya.jpeg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
@@ -94,6 +99,7 @@ const leads: Member[] = [
     grade: "3",
     major: "Informatics",
     bio: "BIO",
+    image: "/headshots/abirami.png",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
@@ -101,7 +107,8 @@ const leads: Member[] = [
     role: "Community Lead",
     grade: "3",
     major: "Materials Science and Engineering",
-    bio: "BIO",
+    bio: "The past two years at UWROV taught me a lot, and I love this community! I also enjoy painting and building models in my free time. ",
+    image: "/headshots/jerry.jpg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
 ];
