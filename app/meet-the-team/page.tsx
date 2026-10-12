@@ -63,7 +63,7 @@ const leads: Member[] = [
     grade: "2",
     major: "Mechanical Engineering",
     bio: "I have been involved with the MATE ROV competition since 2019 and have participated in 6 competitions. I am experienced in CAD, 3D printing, and am excited to learn and practice machining skills. On the side I enjoy reading, music, origami, working on miscellaneous engineering projects, and dabbling in electronics repair.",
-    image: "/headshots/emmett.jpeg",
+    image: "/headshots/emmett.jpg",
     linkedin: "https://www.linkedin.com/in/FILL_IN",
   },
   {
