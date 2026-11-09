@@ -30,7 +30,7 @@ const currentRov: Rov = {
     },
     {
       label: "Conduit Technical Documentation",
-      href: "#",
+      href: "https://drive.google.com/file/d/1_OVl514VMagCg2VMjEaVZ23ZCSNDHrix/view?usp=sharing",
     },
   ],
   image: "/rov-cad.png",
